@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "La Reunión - Community Center & Social Services",
+  title: "La Reunión in Oak Trail Shores",
   description: "La Reunión is a community center providing food assistance, after-school programs, resource connections, and community activities with dignity and care.",
   keywords: ["community center", "social services", "food pantry", "after-school program", "volunteer", "donate"],
   icons: {
