@@ -65,9 +65,9 @@ export function Navigation() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/donate">
-            <Button className="bg-gradient-to-r from-red-600 to-indigo-800 hover:from-red-700 hover:to-indigo-900 text-white">
-              Donate
-            </Button>
+                            <Button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
+                  Donate
+                </Button>
           </Link>
         </div>
       </nav>
@@ -123,9 +123,9 @@ export function Navigation() {
                 </div>
                 <div className="py-6">
                   <Link href="/donate">
-                    <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-800 hover:from-red-700 hover:to-indigo-900 text-white">
-                      Donate
-                    </Button>
+                                            <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
+                          Donate
+                        </Button>
                   </Link>
                 </div>
               </div>

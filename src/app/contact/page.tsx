@@ -97,7 +97,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href="mailto:info@la-reunion.org"
-                    className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                    className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                   >
                     <Mail className="h-4 w-4 mr-2" />
                     Send Email
@@ -179,7 +179,7 @@ export default function ContactPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   Get Directions
@@ -203,7 +203,7 @@ export default function ContactPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   View on Google Maps
@@ -226,7 +226,7 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@la-reunion.org?subject=Partnership%20Inquiry"
-              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
             >
               Partnership Opportunities
             </a>

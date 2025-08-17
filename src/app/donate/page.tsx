@@ -98,7 +98,7 @@ export default function DonatePage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {impactAreas.map((area, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-800 mb-4">
+                                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900 mb-4">
                   <area.icon className="h-8 w-8 text-white" aria-hidden="true" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -107,7 +107,7 @@ export default function DonatePage() {
                 <p className="text-gray-600 mb-3">
                   {area.description}
                 </p>
-                <p className="text-sm bg-gradient-to-r from-red-600 to-indigo-800 bg-clip-text text-transparent font-medium">
+                <p className="text-sm bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent font-medium">
                   {area.impact}
                 </p>
               </div>
@@ -133,7 +133,7 @@ export default function DonatePage() {
               href="https://tafb.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
             >
               Learn More About TAFB
             </a>
@@ -156,7 +156,7 @@ export default function DonatePage() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {donationLevels.map((level, index) => (
               <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-indigo-800 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent mb-2">
                   {level.amount}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -195,7 +195,7 @@ export default function DonatePage() {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     1
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function DonatePage() {
 
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     2
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function DonatePage() {
 
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     3
                   </div>
                 </div>
@@ -298,7 +298,7 @@ export default function DonatePage() {
       </div>
 
       {/* Contact CTA */}
-      <div className="bg-gradient-to-r from-red-600 to-indigo-800 py-16">
+      <div className="bg-gradient-to-r from-red-600 to-indigo-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Make a Difference?

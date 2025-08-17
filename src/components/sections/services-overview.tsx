@@ -46,7 +46,7 @@ export function ServicesOverview() {
             {services.map((service) => (
               <div key={service.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-800">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900">
                     <service.icon className="h-6 w-6 text-white" aria-hidden="true" />
                   </div>
                   {service.name}
@@ -56,7 +56,7 @@ export function ServicesOverview() {
                   <p className="mt-6">
                     <a 
                       href={service.href} 
-                      className="text-sm font-semibold leading-6 bg-gradient-to-r from-red-600 to-indigo-800 bg-clip-text text-transparent hover:from-red-700 hover:to-indigo-900"
+                      className="text-sm font-semibold leading-6 bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent hover:from-red-700 hover:to-indigo-900"
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>

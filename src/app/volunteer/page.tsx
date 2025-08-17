@@ -98,7 +98,7 @@ export default function VolunteerPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-800 mb-4">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900 mb-4">
                   <Star className="h-6 w-6 text-white" aria-hidden="true" />
                 </div>
                 <p className="text-gray-900">{benefit}</p>
@@ -165,7 +165,7 @@ export default function VolunteerPage() {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     1
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export default function VolunteerPage() {
 
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     2
                   </div>
                 </div>
@@ -195,7 +195,7 @@ export default function VolunteerPage() {
 
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-800 text-white font-semibold">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
                     3
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function VolunteerPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   Get Directions
@@ -277,7 +277,7 @@ export default function VolunteerPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   View on Google Maps
@@ -289,7 +289,7 @@ export default function VolunteerPage() {
       </div>
 
       {/* Contact CTA */}
-      <div className="bg-gradient-to-r from-red-600 to-indigo-800 py-16">
+      <div className="bg-gradient-to-r from-red-600 to-indigo-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Get Started?

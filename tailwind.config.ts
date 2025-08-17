@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         brand: {
           primary: '#dc2626', // red-600
-          secondary: '#3730a3', // indigo-800
+          secondary: '#312e81', // indigo-900
         },
       },
       fontFamily: {

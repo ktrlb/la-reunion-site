@@ -99,7 +99,7 @@ export default function ServicesPage() {
                   }`}>
                     <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                       <div className="flex items-center space-x-3 mb-6">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-800">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900">
                           <service.icon className="h-6 w-6 text-white" aria-hidden="true" />
                         </div>
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">
@@ -116,7 +116,7 @@ export default function ServicesPage() {
                           {service.details.map((detail, detailIndex) => (
                             <li key={detailIndex} className="flex items-start">
                               <div className="flex-shrink-0">
-                                <div className="h-2 w-2 rounded-full bg-gradient-to-r from-red-600 to-indigo-800 mt-2"></div>
+                                <div className="h-2 w-2 rounded-full bg-gradient-to-r from-red-600 to-indigo-900 mt-2"></div>
                               </div>
                               <p className="ml-3 text-gray-600">{detail}</p>
                             </li>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
               href="https://tafb.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
             >
               Learn More About TAFB
             </a>
@@ -229,7 +229,7 @@ export default function ServicesPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   Get Directions
@@ -253,7 +253,7 @@ export default function ServicesPage() {
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
+                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   View on Google Maps
@@ -265,7 +265,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Contact CTA */}
-      <div className="bg-gradient-to-r from-red-600 to-indigo-800 py-16">
+      <div className="bg-gradient-to-r from-red-600 to-indigo-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Questions About Our Services?

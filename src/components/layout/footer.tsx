@@ -70,7 +70,7 @@ export function Footer() {
             </div>
             <div className="pt-4">
               <Link href="/donate">
-                <button className="bg-gradient-to-r from-red-600 to-indigo-800 hover:from-red-700 hover:to-indigo-900 text-white px-6 py-2 rounded-md transition-colors">
+                <button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white px-6 py-2 rounded-md transition-colors">
                   Support Our Mission
                 </button>
               </Link>
