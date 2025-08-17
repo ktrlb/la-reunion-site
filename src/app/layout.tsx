@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   description: "La Reunión is a community center providing food assistance, after-school programs, resource connections, and community activities with dignity and care.",
   keywords: ["community center", "social services", "food pantry", "after-school program", "volunteer", "donate"],
   icons: {
-    icon: '/la-reunion-favicon.png',
-    shortcut: '/la-reunion-favicon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
     apple: '/la-reunion-favicon.png',
   },
 };
@@ -33,12 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/la-reunion-favicon.png?v=2" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/la-reunion-favicon.png?v=2" />
         <link rel="icon" type="image/png" sizes="16x16" href="/la-reunion-favicon.png?v=2" />
-        <link rel="shortcut icon" href="/la-reunion-favicon.png?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/la-reunion-favicon.png?v=2" />
-        <link rel="icon" type="image/x-icon" href="/la-reunion-favicon.png?v=2" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
