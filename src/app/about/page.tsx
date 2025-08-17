@@ -108,7 +108,7 @@ export default function AboutPage() {
                 <p>2723 Maplewood St</p>
                 <p>Granbury, TX 76048</p>
                 <p className="mt-4 text-sm text-gray-500">
-                  We're conveniently located in Oak Trail Shores. 
+                  We&apos;re conveniently located in Oak Trail Shores. 
                   Our center serves as a welcoming space for all 
                   community members seeking support, connection, and resources.
                 </p>
@@ -160,16 +160,16 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-lg mx-auto text-gray-600 max-w-4xl">
               <p>
-                La Reunión has a rich history rooted in serving the uninsured and underserved 
-                communities of Hood County, Texas. Our story begins with Ruth's Place Outreach Center, 
-                which was originally part of the larger Ruth's Place organization.
+                              La Reunión has a rich history rooted in serving the uninsured and underserved 
+              communities of Hood County, Texas. Our story begins with Ruth&apos;s Place Outreach Center, 
+              which was originally part of the larger Ruth&apos;s Place organization.
               </p>
               
               <p>
-                Initially located in Oak Trail Shores, Ruth's Place provided both medical and 
-                non-medical services to the community. In 2019, the medical clinic (now known as 
-                Ken Hill Health Center) moved to central Granbury, while the Outreach Center 
-                remained in Oak Trail Shores, continuing to focus on essential non-medical programs.
+                              Initially located in Oak Trail Shores, Ruth&apos;s Place provided both medical and 
+              non-medical services to the community. In 2019, the medical clinic (now known as 
+              Ken Hill Health Center) moved to central Granbury, while the Outreach Center 
+              remained in Oak Trail Shores, continuing to focus on essential non-medical programs.
               </p>
               
               <p>
@@ -180,14 +180,14 @@ export default function AboutPage() {
               </p>
               
               <p>
-                Recently, Ruth's Place partnered with First Christian Church of Granbury, which 
-                will take over the Outreach Center's functions. This transition ensures the 
+                Recently, Ruth&apos;s Place partnered with First Christian Church of Granbury, which 
+                will take over the Outreach Center&apos;s functions. This transition ensures the 
                 continuation of these vital services in our community while marking the beginning 
                 of a new chapter.
               </p>
               
               <p>
-                <strong>Now, Ruth's Place Outreach Center is becoming La Reunión</strong> - a 
+                <strong>Now, Ruth&apos;s Place Outreach Center is becoming La Reunión</strong> - a 
                 community center dedicated to serving our neighbors with dignity, respect, and care. 
                 We continue the legacy of providing essential social services, food assistance, 
                 after-school programs, and community activities that make our community stronger.
@@ -195,7 +195,7 @@ export default function AboutPage() {
               
               <p>
                 Today, La Reunión stands as a beacon of hope and support in our community, 
-                building on the foundation of service established by Ruth's Place while creating 
+                building on the foundation of service established by Ruth&apos;s Place while creating 
                 new opportunities to serve, connect, and strengthen the bonds that make us 
                 a stronger, more resilient community.
               </p>
@@ -211,7 +211,7 @@ export default function AboutPage() {
             Want to Learn More?
           </h2>
           <p className="mt-4 text-lg text-red-100">
-            We'd love to tell you more about our work and how you can get involved.
+            We&apos;d love to tell you more about our work and how you can get involved.
           </p>
           <div className="mt-8">
             <a

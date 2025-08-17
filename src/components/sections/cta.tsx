@@ -10,8 +10,8 @@ export function CTA() {
             Join Us in Building a Stronger Community
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-red-100">
-            Whether you're looking for support, want to volunteer, or hope to partner with us, 
-            we'd love to connect. Together, we can make a difference.
+            Whether you&apos;re looking for support, want to volunteer, or hope to partner with us, 
+            we&apos;d love to connect. Together, we can make a difference.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link href="/volunteer">

@@ -91,7 +91,7 @@ export default function DonatePage() {
               Your Support Makes a Difference
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Here's how your generous donations help us serve our community every day.
+              Here&apos;s how your generous donations help us serve our community every day.
             </p>
           </div>
 
@@ -124,8 +124,8 @@ export default function DonatePage() {
               Our Food Bank Partnership
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We're proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
-              has access to fresh, nutritious food through our Anjelita "Helen" Best Food Pantry.
+              We&apos;re proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
+              has access to fresh, nutritious food through our Anjelita &quot;Helen&quot; Best Food Pantry.
             </p>
           </div>
           <div className="text-center">
@@ -186,7 +186,7 @@ export default function DonatePage() {
               How to Donate
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We're currently setting up our donation system. For now, please contact us directly 
+              We&apos;re currently setting up our donation system. For now, please contact us directly 
               to make a donation or learn about other ways to support our mission.
             </p>
           </div>
@@ -203,7 +203,7 @@ export default function DonatePage() {
                   <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
                   <p className="text-gray-600">
                     Send us an email at info@la-reunion.org expressing your interest in donating. 
-                    Include the amount you'd like to donate and any specific program you'd like to support.
+                    Include the amount you&apos;d like to donate and any specific program you&apos;d like to support.
                   </p>
                 </div>
               </div>
@@ -215,9 +215,9 @@ export default function DonatePage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">We'll Get Back to You</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">We&apos;ll Get Back to You</h3>
                   <p className="text-gray-600">
-                    We'll respond within 24 hours with donation instructions and answer any 
+                    We&apos;ll respond within 24 hours with donation instructions and answer any 
                     questions you might have about how your gift will be used.
                   </p>
                 </div>
@@ -232,8 +232,8 @@ export default function DonatePage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Complete Your Donation</h3>
                   <p className="text-gray-600">
-                    We'll provide you with secure donation options and confirm receipt of your gift. 
-                    You'll also receive updates on how your donation is making a difference.
+                    We&apos;ll provide you with secure donation options and confirm receipt of your gift. 
+                    You&apos;ll also receive updates on how your donation is making a difference.
                   </p>
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function DonatePage() {
             Other Ways to Support
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Financial donations aren't the only way to help. There are many ways to support our mission.
+            Financial donations aren&apos;t the only way to help. There are many ways to support our mission.
           </p>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -304,7 +304,7 @@ export default function DonatePage() {
             Ready to Make a Difference?
           </h2>
           <p className="mt-4 text-lg text-red-100">
-            Contact us today to learn more about how you can support La Reunión's mission.
+            Contact us today to learn more about how you can support La Reunión&apos;s mission.
           </p>
           <div className="mt-8">
             <a

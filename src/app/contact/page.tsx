@@ -1,7 +1,6 @@
 "use client"
 
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, MapPin, Clock } from "lucide-react"
 import Image from "next/image"
 
 export default function ContactPage() {
@@ -24,8 +23,8 @@ export default function ContactPage() {
               </div>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We'd love to hear from you. Whether you have questions about our services, 
-              want to volunteer, or need assistance, we're here to help.
+              We&apos;d love to hear from you. Whether you have questions about our services, 
+              want to volunteer, or need assistance, we&apos;re here to help.
             </p>
           </div>
         </div>
@@ -64,7 +63,7 @@ export default function ContactPage() {
                     <h3 className="text-xl font-semibold text-gray-900">Office Hours</h3>
                     <p className="text-lg text-gray-600 mt-2">Monday - Friday: 9:00 AM - 5:00 PM</p>
                                           <p className="text-gray-500 mt-2">
-                        Anjelita "Helen" Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM
+                        Anjelita &quot;Helen&quot; Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM
                       </p>
                     <p className="text-gray-500">
                       After-School Program: Monday - Friday, 3:00 PM - 6:00 PM
@@ -222,7 +221,7 @@ export default function ContactPage() {
             Other Ways to Connect
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            We're always looking for ways to better serve our community and build partnerships.
+            We&apos;re always looking for ways to better serve our community and build partnerships.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a

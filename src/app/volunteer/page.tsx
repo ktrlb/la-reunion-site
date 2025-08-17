@@ -1,4 +1,4 @@
-import { Users, Heart, Clock, Star, Mail, MapPin } from "lucide-react"
+import { Users, Clock, Star, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
 
 const volunteerOpportunities = [
@@ -90,7 +90,7 @@ export default function VolunteerPage() {
               Why Volunteer With Us?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Volunteering with La Reunión is more than just giving your time—it's about 
+              Volunteering with La Reunión is more than just giving your time—it&apos;s about 
               building a stronger, more connected community together.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function VolunteerPage() {
               How to Get Started
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Ready to make a difference? Here's how you can begin volunteering with La Reunión.
+              Ready to make a difference? Here&apos;s how you can begin volunteering with La Reunión.
             </p>
           </div>
 
@@ -187,7 +187,7 @@ export default function VolunteerPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Schedule a Meeting</h3>
                   <p className="text-gray-600">
-                    We'll arrange a time to meet with you, discuss opportunities, and answer any questions 
+                    We&apos;ll arrange a time to meet with you, discuss opportunities, and answer any questions 
                     you might have about volunteering with us.
                   </p>
                 </div>
@@ -202,7 +202,7 @@ export default function VolunteerPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Begin Volunteering</h3>
                   <p className="text-gray-600">
-                    Once we find the right fit, you'll receive orientation and training, then begin 
+                    Once we find the right fit, you&apos;ll receive orientation and training, then begin 
                     making a difference in our community!
                   </p>
                 </div>
@@ -217,7 +217,7 @@ export default function VolunteerPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Where We're Located
+              Where We&apos;re Located
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Join us at our community center in Oak Trail Shores, Texas, where all our volunteer opportunities are based.
@@ -295,7 +295,7 @@ export default function VolunteerPage() {
             Ready to Get Started?
           </h2>
           <p className="mt-4 text-lg text-red-100">
-            We'd love to hear from you and discuss how you can contribute to our mission.
+            We&apos;d love to hear from you and discuss how you can contribute to our mission.
           </p>
           <div className="mt-8">
             <a

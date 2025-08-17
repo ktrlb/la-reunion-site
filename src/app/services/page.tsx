@@ -171,7 +171,7 @@ export default function ServicesPage() {
               Our Food Bank Partnership
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We're proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
+              We&apos;re proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
               has access to fresh, nutritious food.
             </p>
           </div>
@@ -271,7 +271,7 @@ export default function ServicesPage() {
             Questions About Our Services?
           </h2>
           <p className="mt-4 text-lg text-red-100">
-            We're here to help and would love to hear from you.
+            We&apos;re here to help and would love to hear from you.
           </p>
           <div className="mt-8">
             <a
