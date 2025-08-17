@@ -23,18 +23,6 @@ export function Hero() {
             A community center dedicated to providing essential services, fostering connections, 
             and building a stronger, more supportive community for all.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link href="/services">
-              <Button size="lg" className="bg-gradient-to-r from-red-600 to-indigo-800 hover:from-red-700 hover:to-indigo-900 text-white">
-                Learn About Our Services
-              </Button>
-            </Link>
-            <Link href="/volunteer">
-              <Button variant="outline" size="lg" className="border-red-600 text-red-600 hover:bg-red-50">
-                Get Involved
-              </Button>
-            </Link>
-          </div>
         </div>
       </div>
       
