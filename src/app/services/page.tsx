@@ -147,12 +147,48 @@ export default function ServicesPage() {
 
                     <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                       <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
-                        <div className="flex items-center justify-center h-full">
-                          <div className="text-center">
-                            <service.icon className="h-24 w-24 text-gray-400 mx-auto mb-4" />
-                            <p className="text-gray-500 text-sm">Service illustration</p>
+                        {service.id === "food-pantry" ? (
+                          <Image
+                            src="/images/food pantry.jpg"
+                            alt="Anjelita 'Helen' Best Food Pantry at La Reunión"
+                            width={600}
+                            height={600}
+                            className="h-full w-full object-cover"
+                          />
+                        ) : service.id === "after-school" ? (
+                          <div className="flex items-center justify-center h-full">
+                            <Image
+                              src="/images/slime kids.jpg"
+                              alt="Kids enjoying STEM activities at La Reunión's after-school program"
+                              width={400}
+                              height={500}
+                              className="h-auto w-auto max-h-full max-w-full object-contain rounded-lg"
+                            />
                           </div>
-                        </div>
+                        ) : service.id === "resources" ? (
+                          <Image
+                            src="/images/partnership library.jpg"
+                            alt="Partnership with Hood County Library"
+                            width={600}
+                            height={600}
+                            className="h-full w-full object-cover"
+                          />
+                        ) : service.id === "activities" ? (
+                          <Image
+                            src="/images/celebration.jpg"
+                            alt="Community celebrations and activities at La Reunión"
+                            width={600}
+                            height={600}
+                            className="h-full w-full object-cover"
+                          />
+                        ) : (
+                          <div className="flex items-center justify-center h-full">
+                            <div className="text-center">
+                              <service.icon className="h-24 w-24 text-gray-400 mx-auto mb-4" />
+                              <p className="text-gray-500 text-sm">Service illustration</p>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

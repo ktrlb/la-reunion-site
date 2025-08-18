@@ -105,6 +105,24 @@ export default function VolunteerPage() {
               </div>
             ))}
           </div>
+          
+          {/* Impact Photo */}
+          <div className="mt-16 text-center">
+            <div className="mx-auto max-w-lg">
+              <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/images/slime kids.jpg"
+                  alt="Kids enjoying STEM activities at La Reunión, showing the impact of volunteer support"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="mt-4 text-lg text-gray-600">
+                <strong>See the impact:</strong> Kids enjoying STEM activities and building community connections
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -145,6 +163,24 @@ export default function VolunteerPage() {
                 </div>
               </div>
             ))}
+          </div>
+          
+          {/* Volunteer Activities Photo */}
+          <div className="mt-16 text-center">
+            <div className="mx-auto max-w-lg">
+              <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/images/tie die.jpg"
+                  alt="Kids tie-dying shirts with volunteers at La Reunión, showing the fun activities volunteers help facilitate"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="mt-4 text-lg text-gray-600">
+                <strong>Fun activities like tie-dye:</strong> Volunteers help create memorable experiences for kids
+              </p>
+            </div>
           </div>
         </div>
       </div>

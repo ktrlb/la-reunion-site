@@ -1,4 +1,5 @@
 import { Utensils, Users, Heart, BookOpen } from "lucide-react"
+import Image from "next/image"
 
 const services = [
   {
@@ -53,6 +54,9 @@ export function ServicesOverview() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{service.description}</p>
+                  
+
+                  
                   <p className="mt-6">
                     <a 
                       href={service.href} 
@@ -65,6 +69,74 @@ export function ServicesOverview() {
               </div>
             ))}
           </dl>
+        </div>
+      </div>
+      
+      {/* Community Photo Gallery */}
+      <div className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our Community in Action
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Food Pantry */}
+            <div className="group overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/food pantry.jpg"
+                alt="Anjelita 'Helen' Best Food Pantry serving our community"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            
+            {/* Helen Hug */}
+            <div className="group overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/helen hug.jpg"
+                alt="Helen embracing a community member, showing care and connection"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            
+            {/* STEM Kids */}
+            <div className="group overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/slime kids.jpg"
+                alt="Kids enjoying STEM activities and learning together"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            
+            {/* Tie Dye */}
+            <div className="group overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/tie die.jpg"
+                alt="Kids tie-dying shirts with volunteer support"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            
+            {/* Celebration */}
+            <div className="group overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/celebration.jpg"
+                alt="Community celebrations and events at La Reunión"
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

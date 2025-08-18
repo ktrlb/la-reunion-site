@@ -86,6 +86,21 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Community Photo Banner */}
+      <div className="py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/images/helen hug.jpg"
+              alt="Helen embracing a community member at La Reunión"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Location Section */}
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

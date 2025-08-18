@@ -1,4 +1,4 @@
-import { Heart, Users, Utensils, BookOpen, DollarSign, Mail } from "lucide-react"
+import { Heart, Users, Utensils, BookOpen, Mail } from "lucide-react"
 import Image from "next/image"
 
 const impactAreas = [
@@ -28,33 +28,7 @@ const impactAreas = [
   }
 ]
 
-const donationLevels = [
-  {
-    amount: "$25",
-    title: "Community Supporter",
-    description: "Provides a week of groceries for a family in need"
-  },
-  {
-    amount: "$50",
-    title: "Program Partner",
-    description: "Supports a child in our after-school program for a month"
-  },
-  {
-    amount: "$100",
-    title: "Community Builder",
-    description: "Helps us host community events and activities"
-  },
-  {
-    amount: "$250",
-    title: "Impact Champion",
-    description: "Provides comprehensive support for multiple families"
-  },
-  {
-    amount: "$500",
-    title: "Mission Partner",
-    description: "Sustains our core programs and services"
-  }
-]
+
 
 export default function DonatePage() {
   return (
@@ -83,164 +57,102 @@ export default function DonatePage() {
         </div>
       </div>
 
-      {/* Impact Areas */}
+      {/* Make a Donation Today */}
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Your Support Makes a Difference
+              Make a Donation Today
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Here&apos;s how your generous donations help us serve our community every day.
+              Your generous support helps us continue providing essential services to our community. 
+              Every donation makes a real difference in the lives of families and individuals we serve.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {impactAreas.map((area, index) => (
-              <div key={index} className="text-center">
-                                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900 mb-4">
-                  <area.icon className="h-8 w-8 text-white" aria-hidden="true" />
+          <div className="mx-auto max-w-4xl">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              
+              {/* Transitional Funding Information */}
+              <div className="mb-8 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                <div className="text-sm text-gray-700">
+                  <p className="font-medium mb-2 text-gray-900">About Your Donation</p>
+                  <p>
+                    We are currently in a transitional period as ownership of the nonprofit center transfers to its new entity. 
+                    During this time, all donations will go to the designated fund at First Christian Church of Granbury, 
+                    which can only be spent to support La Reunión&apos;s operations, programs and services. 
+                    Your donation will continue to directly benefit our community center and its mission.
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {area.title}
-                </h3>
-                <p className="text-gray-600 mb-3">
-                  {area.description}
-                </p>
-                <p className="text-sm bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent font-medium">
-                  {area.impact}
-                </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
-      {/* TAFB Partnership Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our Food Bank Partnership
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We&apos;re proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
-              has access to fresh, nutritious food through our Anjelita &quot;Helen&quot; Best Food Pantry.
-            </p>
-          </div>
-          <div className="text-center">
-            <a
-              href="https://tafb.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-                              className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
-            >
-              Learn More About TAFB
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Donation Levels */}
-      <div className="py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Choose Your Impact Level
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Select a donation amount that fits your budget and see the direct impact of your generosity.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {donationLevels.map((level, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
-                <div className="text-3xl font-bold bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent mb-2">
-                  {level.amount}
+              {/* Donation Options */}
+              <div className="text-center mb-8">
+                <div className="mx-auto w-16 h-16 bg-gradient-to-r from-red-600 to-indigo-900 rounded-full flex items-center justify-center mb-4">
+                  <Heart className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {level.title}
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Support Our Mission
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  {level.description}
+                  Make a secure donation through our trusted partner Aplos.
                 </p>
-                <a
-                  href={`mailto:info@la-reunion.org?subject=Donation%20-%20${encodeURIComponent(level.title)}&body=I%20would%20like%20to%20donate%20${encodeURIComponent(level.amount)}%20to%20support%20La%20Reuni%C3%B3n's%20mission.`}
-                  className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-800 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
-                >
-                  <DollarSign className="h-4 w-4 mr-2" />
-                  Donate {level.amount}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* How to Donate */}
-      <div className="py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              How to Donate
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We&apos;re currently setting up our donation system. For now, please contact us directly 
-              to make a donation or learn about other ways to support our mission.
-            </p>
-          </div>
-
-          <div className="mx-auto max-w-3xl">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
-                    1
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Contact Us</h3>
-                  <p className="text-gray-600">
-                    Send us an email at info@la-reunion.org expressing your interest in donating. 
-                    Include the amount you&apos;d like to donate and any specific program you&apos;d like to support.
+                
+                {/* Online Donation Button */}
+                <div className="mb-8">
+                  <a 
+                    href="https://www.aplos.com/aws/give/fccgranbury/la-reunion"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 inline-flex items-center justify-center space-x-2"
+                  >
+                    <Heart className="h-5 w-5" />
+                    <span>Donate Now</span>
+                  </a>
+                  
+                  <p className="text-sm text-gray-500 mt-3">
+                    Secure • Tax-deductible • Immediate confirmation
                   </p>
                 </div>
-              </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
-                    2
+                {/* Divider */}
+                <div className="relative my-8">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-200"></div>
+                  </div>
+                  <div className="relative flex justify-center text-sm">
+                    <span className="px-4 bg-white text-gray-500">or</span>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">We&apos;ll Get Back to You</h3>
-                  <p className="text-gray-600">
-                    We&apos;ll respond within 24 hours with donation instructions and answer any 
-                    questions you might have about how your gift will be used.
-                  </p>
-                </div>
-              </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-indigo-900 text-white font-semibold">
-                    3
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Complete Your Donation</h3>
-                  <p className="text-gray-600">
-                    We&apos;ll provide you with secure donation options and confirm receipt of your gift. 
-                    You&apos;ll also receive updates on how your donation is making a difference.
+                {/* Mail Donation Option */}
+                <div className="text-center">
+                  <p className="text-gray-600 mb-4 font-medium">
+                    Donate by Mail
                   </p>
+                  <div className="mb-4 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                    <p className="font-medium text-gray-900 mb-2">Send checks to:</p>
+                    <p className="font-mono text-gray-700">
+                      First Christian Church of Granbury<br />
+                      c/o La Reunión<br />
+                      2109 W. US Hwy 377<br />
+                      Granbury, TX 76048
+                    </p>
+                  </div>
+                  <a
+                    href="mailto:info@la-reunion.org?subject=Donation%20Inquiry"
+                    className="inline-flex items-center text-red-600 hover:text-red-700 font-medium"
+                  >
+                    <Mail className="h-4 w-4 mr-2" />
+                    Contact us about donations
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       {/* Other Ways to Support */}
       <div className="bg-gray-50 py-16">
@@ -296,6 +208,41 @@ export default function DonatePage() {
           </div>
         </div>
       </div>
+      {/* Impact Areas */}
+      <div className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Your Support Makes a Difference
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Here&apos;s how your generous donations help us serve our community every day.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {impactAreas.map((area, index) => (
+              <div key={index} className="text-center">
+                                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900 mb-4">
+                  <area.icon className="h-8 w-8 text-white" aria-hidden="true" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {area.title}
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  {area.description}
+                </p>
+                <p className="text-sm bg-gradient-to-r from-red-600 to-indigo-900 bg-clip-text text-transparent font-medium">
+                  {area.impact}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+
 
       {/* Contact CTA */}
       <div className="bg-gradient-to-r from-red-600 to-indigo-900 py-16">
@@ -317,6 +264,8 @@ export default function DonatePage() {
           </div>
         </div>
       </div>
+      
+
     </div>
   )
 }
