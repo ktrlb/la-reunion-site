@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const impactAreas = [
   {
-    title: "Anjelita 'Helen' Best Food Pantry",
+    title: "Angelita 'Helen' Best Food Pantry",
     description: "Help us provide nutritious food to families in need through our partnership with the Tarrant Area Food Bank.",
     icon: Utensils,
     impact: "Every $25 provides a week's worth of groceries for a family"

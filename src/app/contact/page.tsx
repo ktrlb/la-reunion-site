@@ -63,7 +63,7 @@ export default function ContactPage() {
                     <h3 className="text-xl font-semibold text-gray-900">Office Hours</h3>
                     <p className="text-lg text-gray-600 mt-2">Monday - Friday: 9:00 AM - 5:00 PM</p>
                                           <p className="text-gray-500 mt-2">
-                        Anjelita &quot;Helen&quot; Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM
+                        Angelita &quot;Helen&quot; Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM
                       </p>
                     <p className="text-gray-500">
                       After-School Program: Monday - Friday, 3:00 PM - 6:00 PM

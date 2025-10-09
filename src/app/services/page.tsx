@@ -4,7 +4,7 @@ import Image from "next/image"
 const services = [
   {
     id: "food-pantry",
-    name: "Anjelita 'Helen' Best Food Pantry",
+    name: "Angelita 'Helen' Best Food Pantry",
     description: "We provide nutritious food assistance to families and individuals in need through our partnership with the Tarrant Area Food Bank.",
     icon: Utensils,
     details: [
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                         {service.id === "food-pantry" ? (
                           <Image
                             src="/images/food pantry.jpg"
-                            alt="Anjelita 'Helen' Best Food Pantry at La Reunión"
+                            alt="Angelita 'Helen' Best Food Pantry at La Reunión"
                             width={600}
                             height={600}
                             className="h-full w-full object-cover"

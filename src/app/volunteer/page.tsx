@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const volunteerOpportunities = [
   {
-    title: "Anjelita 'Helen' Best Food Pantry Support",
+    title: "Angelita 'Helen' Best Food Pantry Support",
     description: "Help organize and distribute food items from the Tarrant Area Food Bank, assist with client check-ins, and maintain pantry organization.",
     timeCommitment: "Thursdays 9:00 AM - 4:00 PM (Prep 9-12, Distribution 1-4)",
     skills: "Organization, customer service, compassion"
