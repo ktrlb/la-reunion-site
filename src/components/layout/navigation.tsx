@@ -5,17 +5,20 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { LanguageSwitcher } from "@/components/ui/language-switcher"
+import { useTranslation } from "@/contexts/translation-context"
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Volunteer", href: "/volunteer" },
-  { name: "Contact", href: "/contact" },
+  { key: "home", href: "/" },
+  { key: "about", href: "/about" },
+  { key: "services", href: "/services" },
+  { key: "volunteer", href: "/volunteer" },
+  { key: "contact", href: "/contact" },
 ]
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { t } = useTranslation()
 
   return (
     <header className="bg-white shadow-sm">
@@ -55,19 +58,20 @@ export function Navigation() {
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <Link
-              key={item.name}
+              key={item.key}
               href={item.href}
               className="text-sm font-semibold leading-6 text-gray-900 hover:text-red-600 transition-colors"
             >
-              {item.name}
+              {t(`nav.${item.key}`)}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
+          <LanguageSwitcher />
           <Link href="/donate">
-                            <Button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
-                  Donate
-                </Button>
+            <Button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
+              {t('nav.donate')}
+            </Button>
           </Link>
         </div>
       </nav>
@@ -112,20 +116,23 @@ export function Navigation() {
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <Link
-                      key={item.name}
+                      key={item.key}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item.name}
+                      {t(`nav.${item.key}`)}
                     </Link>
                   ))}
                 </div>
-                <div className="py-6">
+                <div className="py-6 space-y-3">
+                  <div className="px-3">
+                    <LanguageSwitcher />
+                  </div>
                   <Link href="/donate">
-                                            <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
-                          Donate
-                        </Button>
+                    <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
+                      {t('nav.donate')}
+                    </Button>
                   </Link>
                 </div>
               </div>

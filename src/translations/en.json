@@ -1,0 +1,361 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "volunteer": "Volunteer",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "subtitle": "A community center dedicated to providing essential services, fostering connections, and building a stronger, more supportive community for all."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "La Reunión provides a range of essential services designed to support our community and strengthen the bonds that make us stronger together.",
+    "foodPantry": {
+      "name": "Angelita 'Helen' Best Food Pantry",
+      "description": "Providing nutritious food assistance to families in need with dignity and respect. A member of the Tarrant Area Food Bank.",
+      "fullDescription": "We provide nutritious food assistance to families and individuals in need through our partnership with the Tarrant Area Food Bank.",
+      "details": [
+        "Fresh produce and non-perishable items from Tarrant Area Food Bank",
+        "No appointment necessary during open hours",
+        "Serving all community members with dignity and respect",
+        "Member of the Tarrant Area Food Bank network"
+      ],
+      "hours": "Every Thursday: 9:00 AM - 4:00 PM (Prep 9-12, Distribution 1-4)",
+      "contact": "For questions about food assistance, please contact us at info@la-reunion.org"
+    },
+    "afterSchool": {
+      "name": "After-School Program",
+      "description": "Supporting children's education and development through engaging activities and homework help.",
+      "fullDescription": "Supporting children's education and development through engaging activities.",
+      "details": [
+        "Homework help and tutoring support",
+        "Educational enrichment activities",
+        "Safe, supervised environment for children",
+        "Partnerships with local schools and educators"
+      ],
+      "hours": "Monday through Friday, 3:00 PM - 6:00 PM (School Year)",
+      "contact": "For enrollment information, please contact us at info@la-reunion.org"
+    },
+    "resources": {
+      "name": "Resource Connection",
+      "description": "Helping community members connect with available resources and support services.",
+      "fullDescription": "Helping community members connect with available resources and support services.",
+      "details": [
+        "Information about local social services",
+        "Referrals to healthcare providers",
+        "Housing and employment resources",
+        "Legal and financial assistance information"
+      ],
+      "hours": "Available during all center hours",
+      "contact": "For resource information, please contact us at info@la-reunion.org"
+    },
+    "activities": {
+      "name": "Community Activities",
+      "description": "Fostering connections and building community through various events and programs.",
+      "fullDescription": "Fostering connections and building community through various events and programs.",
+      "details": [
+        "Community gatherings and celebrations",
+        "Educational workshops and classes",
+        "Cultural events and activities",
+        "Volunteer opportunities and service projects"
+      ],
+      "hours": "Various times - check our calendar for upcoming events",
+      "contact": "For event information, please contact us at info@la-reunion.org"
+    },
+    "whatWeOffer": "What We Offer:",
+    "hours": "Hours:",
+    "contact": "Contact:",
+    "ourServicesAt": "Our Services at",
+    "visitOurCenter": "Visit Our Center",
+    "visitOurCenterSubtitle": "All our services are available at our community center in Oak Trail Shores, Texas.",
+    "foodBankPartnership": "Our Food Bank Partnership",
+    "foodBankPartnershipSubtitle": "We're proud to be a member of the Tarrant Area Food Bank network, ensuring our community has access to fresh, nutritious food.",
+    "learnMoreAboutTAFB": "Learn More About TAFB",
+    "questionsAboutServices": "Questions About Our Services?",
+    "questionsAboutServicesSubtitle": "We're here to help and would love to hear from you.",
+    "communityInAction": "Our Community in Action",
+    "learnMore": "Learn more"
+  },
+  "cta": {
+    "title": "Join Us in Building a Stronger Community",
+    "subtitle": "Whether you're looking for support, want to volunteer, or hope to partner with us, we'd love to connect. Together, we can make a difference.",
+    "volunteer": "Volunteer With Us",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "A community center dedicated to serving our neighbors with dignity, respect, and care.",
+    "mission": {
+      "title": "Our Mission",
+      "p1": "La Reunión exists to strengthen our community by providing essential services, fostering meaningful connections, and supporting individuals and families in times of need. We believe that every person deserves to be treated with dignity and respect.",
+      "p2": "As a faith-based organization, we are guided by our values of compassion, service, and community. However, we serve everyone regardless of their background, beliefs, or circumstances."
+    },
+    "values": {
+      "title": "Our Values",
+      "dignity": {
+        "title": "Dignity",
+        "description": "We believe every person has inherent worth and deserves to be treated with respect."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We foster connections and build relationships that strengthen our neighborhood."
+      },
+      "service": {
+        "title": "Service",
+        "description": "We are committed to meeting the real needs of our community with compassion and care."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "We work collaboratively with other organizations and community members to maximize our impact."
+      }
+    },
+    "location": {
+      "title": "Our Location",
+      "subtitle": "Located in the heart of Granbury, Texas, we serve our community from our welcoming community center on Maplewood Street.",
+      "address": "2723 Maplewood St",
+      "city": "Granbury, TX 76048",
+      "description": "We're conveniently located in Oak Trail Shores. Our center serves as a welcoming space for all community members seeking support, connection, and resources.",
+      "getDirections": "Get Directions & Contact Info",
+      "viewOnGoogleMaps": "View on Google Maps"
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "La Reunión has a rich history rooted in serving the uninsured and underserved communities of Hood County, Texas. Our story begins with Ruth's Place Outreach Center, which was originally part of the larger Ruth's Place organization.",
+      "p2": "Initially located in Oak Trail Shores, Ruth's Place provided both medical and non-medical services to the community. In 2019, the medical clinic (now known as Ken Hill Health Center) moved to central Granbury, while the Outreach Center remained in Oak Trail Shores, continuing to focus on essential non-medical programs.",
+      "p3": "These vital programs included a food pantry, after-school activities, and ESL classes, all designed to support and strengthen our community. The Outreach Center became a cornerstone of Oak Trail Shores, providing essential services to families and individuals in need.",
+      "p4": "Recently, Ruth's Place partnered with First Christian Church of Granbury, which will take over the Outreach Center's functions. This transition ensures the continuation of these vital services in our community while marking the beginning of a new chapter.",
+      "p5": "Now, Ruth's Place Outreach Center is becoming La Reunión - a community center dedicated to serving our neighbors with dignity, respect, and care. We continue the legacy of providing essential social services, food assistance, after-school programs, and community activities that make our community stronger.",
+      "p6": "Today, La Reunión stands as a beacon of hope and support in our community, building on the foundation of service established by Ruth's Place while creating new opportunities to serve, connect, and strengthen the bonds that make us a stronger, more resilient community."
+    },
+    "wantToLearnMore": {
+      "title": "Want to Learn More?",
+      "subtitle": "We'd love to tell you more about our work and how you can get involved.",
+      "contactUs": "Contact Us"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We'd love to hear from you. Whether you have questions about our services, want to volunteer, or need assistance, we're here to help.",
+    "getInTouch": "Get in Touch",
+    "email": {
+      "title": "Email",
+      "address": "info@la-reunion.org",
+      "description": "For general inquiries, service information, and volunteer opportunities"
+    },
+    "officeHours": {
+      "title": "Office Hours",
+      "hours": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "foodPantry": "Angelita \"Helen\" Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM",
+      "afterSchool": "After-School Program: Monday - Friday, 3:00 PM - 6:00 PM"
+    },
+    "location": {
+      "title": "Location",
+      "address": "2723 Maplewood St",
+      "city": "Granbury, TX 76048",
+      "description": "Located in the heart of Oak Trail Shores"
+    },
+    "immediateAssistance": {
+      "title": "Need Immediate Assistance?",
+      "description": "If you need immediate help with food assistance or other urgent needs, please contact us directly at info@la-reunion.org or visit during our open hours.",
+      "sendEmail": "Send Email"
+    },
+    "quickContact": {
+      "title": "Quick Contact",
+      "description": "The fastest way to reach us is by email. We typically respond within 24 hours.",
+      "generalQuestions": "General Questions",
+      "volunteerOpportunities": "Volunteer Opportunities",
+      "serviceInformation": "Service Information"
+    },
+    "findUs": {
+      "title": "Find Us",
+      "subtitle": "Visit us at our community center in Oak Trail Shores, Texas.",
+      "foodPantryHours": "Food Pantry: Thursdays 1:00 PM - 4:00 PM"
+    },
+    "otherWaysToConnect": {
+      "title": "Other Ways to Connect",
+      "subtitle": "We're always looking for ways to better serve our community and build partnerships.",
+      "partnershipOpportunities": "Partnership Opportunities",
+      "volunteerInterest": "Volunteer Interest"
+    }
+  },
+  "volunteer": {
+    "title": "Volunteer With",
+    "subtitle": "Join our team of dedicated volunteers and help us serve our community with dignity, respect, and care. Every hour you give makes a difference.",
+    "whyVolunteer": {
+      "title": "Why Volunteer With Us?",
+      "subtitle": "Volunteering with La Reunión is more than just giving your time—it's about building a stronger, more connected community together.",
+      "benefits": [
+        "Make a meaningful difference in your community",
+        "Gain valuable experience and skills",
+        "Meet new people and build relationships",
+        "Learn about social services and community needs",
+        "Contribute to positive change",
+        "Flexible scheduling options"
+      ]
+    },
+    "opportunities": {
+      "title": "Volunteer Opportunities",
+      "subtitle": "We have various volunteer positions available to match your interests, skills, and schedule.",
+      "foodPantry": {
+        "title": "Angelita 'Helen' Best Food Pantry Support",
+        "description": "Help organize and distribute food items from the Tarrant Area Food Bank, assist with client check-ins, and maintain pantry organization.",
+        "time": "Thursdays 9:00 AM - 4:00 PM (Prep 9-12, Distribution 1-4)",
+        "skills": "Organization, customer service, compassion"
+      },
+      "afterSchool": {
+        "title": "After-School Program Assistant",
+        "description": "Support children with homework, lead educational activities, and provide supervision during program hours.",
+        "time": "Monday through Friday, 3:00 PM - 6:00 PM (School Year)",
+        "skills": "Patience, creativity, experience with children"
+      },
+      "grounds": {
+        "title": "Grounds Maintenance Team",
+        "description": "Help maintain our community center grounds through mowing, weeding, power washing, and landscaping.",
+        "time": "Flexible scheduling, typically 2-4 hours per week",
+        "skills": "Landscaping, maintenance, physical ability"
+      },
+      "admin": {
+        "title": "Administrative Support",
+        "description": "Assist with office tasks, data entry, phone calls, and general administrative duties.",
+        "time": "Flexible, 2-6 hours per week",
+        "skills": "Organization, computer skills, attention to detail"
+      },
+      "events": {
+        "title": "Event Planning & Support",
+        "description": "Help plan and coordinate community events, fundraisers, and special programs.",
+        "time": "Varies by event",
+        "skills": "Event planning, communication, creativity"
+      },
+      "teen": {
+        "title": "Teen Program Support",
+        "description": "Support teen programs by providing healthy snacks, helping with activities, and creating a welcoming environment.",
+        "time": "Varies by program, typically 2-3 hours per event",
+        "skills": "Youth engagement, creativity, organization"
+      },
+      "special": {
+        "title": "Special Projects",
+        "description": "Contribute your unique skills and talents to help us better serve our community.",
+        "time": "Varies by project",
+        "skills": "Your unique talents and interests"
+      },
+      "time": "Time:",
+      "skills": "Skills:"
+    },
+    "getStarted": {
+      "title": "How to Get Started",
+      "subtitle": "Ready to make a difference? Here's how you can begin volunteering with La Reunión.",
+      "step1": {
+        "title": "Contact Us",
+        "description": "Send us an email at info@la-reunion.org expressing your interest in volunteering. Tell us about your interests, skills, and availability."
+      },
+      "step2": {
+        "title": "Schedule a Meeting",
+        "description": "We'll arrange a time to meet with you, discuss opportunities, and answer any questions you might have about volunteering with us."
+      },
+      "step3": {
+        "title": "Begin Volunteering",
+        "description": "Once we find the right fit, you'll receive orientation and training, then begin making a difference in our community!"
+      }
+    },
+    "location": {
+      "title": "Where We're Located",
+      "subtitle": "Join us at our community center in Oak Trail Shores, Texas, where all our volunteer opportunities are based.",
+      "foodPantryHours": "Food Pantry: Thursdays 9:00 AM - 4:00 PM"
+    },
+    "readyToGetStarted": {
+      "title": "Ready to Get Started?",
+      "subtitle": "We'd love to hear from you and discuss how you can contribute to our mission.",
+      "contactUs": "Contact Us About Volunteering"
+    },
+    "seeTheImpact": "See the impact:",
+    "impactDescription": "Kids enjoying STEM activities and building community connections",
+    "funActivities": "Fun activities like tie-dye:",
+    "activitiesDescription": "Volunteers help create memorable experiences for kids"
+  },
+  "donate": {
+    "title": "Support",
+    "subtitle": "Your donation helps La Reunión provide essential services, build community connections, and support families in need. Every gift makes a difference.",
+    "makeDonation": {
+      "title": "Make a Donation Today",
+      "subtitle": "Your generous support helps us continue providing essential services to our community. Every donation makes a real difference in the lives of families and individuals we serve.",
+      "aboutDonation": {
+        "title": "About Your Donation",
+        "description": "We are currently in a transitional period as ownership of the nonprofit center transfers to its new entity. During this time, all donations will go to the designated fund at First Christian Church of Granbury, which can only be spent to support La Reunión's operations, programs and services. Your donation will continue to directly benefit our community center and its mission."
+      },
+      "supportMission": {
+        "title": "Support Our Mission",
+        "description": "Make a secure donation through our trusted partner Aplos.",
+        "donateNow": "Donate Now",
+        "secure": "Secure • Tax-deductible • Immediate confirmation"
+      },
+      "donateByMail": {
+        "title": "Donate by Mail",
+        "sendChecksTo": "Send checks to:",
+        "address1": "First Christian Church of Granbury",
+        "address2": "c/o La Reunión",
+        "address3": "2109 W. US Hwy 377",
+        "address4": "Granbury, TX 76048",
+        "contactUs": "Contact us about donations"
+      }
+    },
+    "otherWays": {
+      "title": "Other Ways to Support",
+      "subtitle": "Financial donations aren't the only way to help. There are many ways to support our mission.",
+      "volunteer": {
+        "title": "Volunteer",
+        "description": "Give your time and talents to help us serve our community.",
+        "learnMore": "Learn More"
+      },
+      "spreadWord": {
+        "title": "Spread the Word",
+        "description": "Tell others about our services and mission.",
+        "contactUs": "Contact Us"
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Explore ways your organization can partner with us.",
+        "getInTouch": "Get in Touch"
+      }
+    },
+    "impact": {
+      "title": "Your Support Makes a Difference",
+      "subtitle": "Here's how your generous donations help us serve our community every day.",
+      "foodPantry": {
+        "title": "Angelita 'Helen' Best Food Pantry",
+        "description": "Help us provide nutritious food to families in need through our partnership with the Tarrant Area Food Bank.",
+        "impact": "Each $25 donation could help provide a week's worth of groceries for a family"
+      },
+      "afterSchool": {
+        "title": "After-School Programs",
+        "description": "Support children's education and development through our enrichment programs.",
+        "impact": "Each $50 donation could help provide a month of after-school support for a child"
+      },
+      "community": {
+        "title": "Community Building",
+        "description": "Help us create spaces and opportunities for community connection and growth.",
+        "impact": "Each $100 donation helps us host community events and activities"
+      },
+      "resources": {
+        "title": "Resource Connection",
+        "description": "Support our efforts to connect community members with vital resources and services.",
+        "impact": "Each $75 donation helps us provide resource navigation for 10 families"
+      }
+    },
+    "readyToMakeDifference": {
+      "title": "Ready to Make a Difference?",
+      "subtitle": "Contact us today to learn more about how you can support La Reunión's mission.",
+      "contactUs": "Contact Us About Donating"
+    }
+  },
+  "common": {
+    "communityCenter": "La Reunión Community Center",
+    "mondayFriday": "Monday - Friday: 9:00 AM - 5:00 PM",
+    "getDirections": "Get Directions",
+    "viewOnGoogleMaps": "View on Google Maps"
+  }
+}
+

@@ -2,8 +2,10 @@
 
 import { Mail, MapPin, Clock } from "lucide-react"
 import Image from "next/image"
+import { useTranslation } from "@/contexts/translation-context"
 
 export default function ContactPage() {
+  const { t } = useTranslation()
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -11,7 +13,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
-              Contact{" "}
+              {t('contact.title')}{" "}
               <div className="flex justify-center mt-4">
                 <Image
                   src="/la-reunion-name.svg"
@@ -23,8 +25,7 @@ export default function ContactPage() {
               </div>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We&apos;d love to hear from you. Whether you have questions about our services, 
-              want to volunteer, or need assistance, we&apos;re here to help.
+              {t('contact.subtitle')}
             </p>
           </div>
         </div>
@@ -36,7 +37,7 @@ export default function ContactPage() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
-                Get in Touch
+                {t('contact.getInTouch')}
               </h2>
             </div>
             
@@ -47,10 +48,10 @@ export default function ContactPage() {
                     <Mail className="h-8 w-8 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">Email</h3>
-                    <p className="text-lg text-gray-600 mt-2">info@la-reunion.org</p>
+                    <h3 className="text-xl font-semibold text-gray-900">{t('contact.email.title')}</h3>
+                    <p className="text-lg text-gray-600 mt-2">{t('contact.email.address')}</p>
                     <p className="text-gray-500 mt-2">
-                      For general inquiries, service information, and volunteer opportunities
+                      {t('contact.email.description')}
                     </p>
                   </div>
                 </div>
@@ -60,13 +61,13 @@ export default function ContactPage() {
                     <Clock className="h-8 w-8 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">Office Hours</h3>
-                    <p className="text-lg text-gray-600 mt-2">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                                          <p className="text-gray-500 mt-2">
-                        Angelita &quot;Helen&quot; Best Food Pantry: Every Thursday, 1:00 PM - 4:00 PM
-                      </p>
+                    <h3 className="text-xl font-semibold text-gray-900">{t('contact.officeHours.title')}</h3>
+                    <p className="text-lg text-gray-600 mt-2">{t('contact.officeHours.hours')}</p>
+                    <p className="text-gray-500 mt-2">
+                      {t('contact.officeHours.foodPantry')}
+                    </p>
                     <p className="text-gray-500">
-                      After-School Program: Monday - Friday, 3:00 PM - 6:00 PM
+                      {t('contact.officeHours.afterSchool')}
                     </p>
                   </div>
                 </div>
@@ -76,11 +77,11 @@ export default function ContactPage() {
                     <MapPin className="h-8 w-8 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">Location</h3>
-                    <p className="text-lg text-gray-600 mt-2">2723 Maplewood St</p>
-                    <p className="text-lg text-gray-600">Granbury, TX 76048</p>
+                    <h3 className="text-xl font-semibold text-gray-900">{t('contact.location.title')}</h3>
+                    <p className="text-lg text-gray-600 mt-2">{t('contact.location.address')}</p>
+                    <p className="text-lg text-gray-600">{t('contact.location.city')}</p>
                     <p className="text-gray-500 mt-2">
-                      Located in the heart of Oak Trail Shores
+                      {t('contact.location.description')}
                     </p>
                   </div>
                 </div>

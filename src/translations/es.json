@@ -1,0 +1,361 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "volunteer": "Voluntariado",
+    "contact": "Contacto",
+    "donate": "Donar"
+  },
+  "hero": {
+    "welcome": "Bienvenido a",
+    "subtitle": "Un centro comunitario dedicado a proporcionar servicios esenciales, fomentar conexiones y construir una comunidad más fuerte y solidaria para todos."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "La Reunión proporciona una variedad de servicios esenciales diseñados para apoyar a nuestra comunidad y fortalecer los lazos que nos hacen más fuertes juntos.",
+    "foodPantry": {
+      "name": "Despensa de Alimentos Angelita 'Helen' Best",
+      "description": "Proporcionando asistencia alimentaria nutritiva a familias necesitadas con dignidad y respeto. Miembro del Banco de Alimentos del Área de Tarrant.",
+      "fullDescription": "Proporcionamos asistencia alimentaria nutritiva a familias e individuos necesitados a través de nuestra asociación con el Banco de Alimentos del Área de Tarrant.",
+      "details": [
+        "Productos frescos y artículos no perecederos del Banco de Alimentos del Área de Tarrant",
+        "No es necesario hacer cita durante las horas de atención",
+        "Sirviendo a todos los miembros de la comunidad con dignidad y respeto",
+        "Miembro de la red del Banco de Alimentos del Área de Tarrant"
+      ],
+      "hours": "Todos los jueves: 9:00 AM - 4:00 PM (Preparación 9-12, Distribución 1-4)",
+      "contact": "Para preguntas sobre asistencia alimentaria, por favor contáctenos en info@la-reunion.org"
+    },
+    "afterSchool": {
+      "name": "Programa Después de la Escuela",
+      "description": "Apoyando la educación y el desarrollo de los niños a través de actividades atractivas y ayuda con las tareas.",
+      "fullDescription": "Apoyando la educación y el desarrollo de los niños a través de actividades atractivas.",
+      "details": [
+        "Ayuda con las tareas y apoyo de tutoría",
+        "Actividades de enriquecimiento educativo",
+        "Ambiente seguro y supervisado para niños",
+        "Asociaciones con escuelas locales y educadores"
+      ],
+      "hours": "Lunes a viernes, 3:00 PM - 6:00 PM (Año Escolar)",
+      "contact": "Para información sobre inscripción, por favor contáctenos en info@la-reunion.org"
+    },
+    "resources": {
+      "name": "Conexión de Recursos",
+      "description": "Ayudando a los miembros de la comunidad a conectarse con recursos disponibles y servicios de apoyo.",
+      "fullDescription": "Ayudando a los miembros de la comunidad a conectarse con recursos disponibles y servicios de apoyo.",
+      "details": [
+        "Información sobre servicios sociales locales",
+        "Referencias a proveedores de atención médica",
+        "Recursos de vivienda y empleo",
+        "Información sobre asistencia legal y financiera"
+      ],
+      "hours": "Disponible durante todas las horas del centro",
+      "contact": "Para información sobre recursos, por favor contáctenos en info@la-reunion.org"
+    },
+    "activities": {
+      "name": "Actividades Comunitarias",
+      "description": "Fomentando conexiones y construyendo comunidad a través de varios eventos y programas.",
+      "fullDescription": "Fomentando conexiones y construyendo comunidad a través de varios eventos y programas.",
+      "details": [
+        "Reuniones y celebraciones comunitarias",
+        "Talleres y clases educativas",
+        "Eventos y actividades culturales",
+        "Oportunidades de voluntariado y proyectos de servicio"
+      ],
+      "hours": "Varios horarios - consulte nuestro calendario para eventos próximos",
+      "contact": "Para información sobre eventos, por favor contáctenos en info@la-reunion.org"
+    },
+    "whatWeOffer": "Lo Que Ofrecemos:",
+    "hours": "Horario:",
+    "contact": "Contacto:",
+    "ourServicesAt": "Nuestros Servicios en",
+    "visitOurCenter": "Visite Nuestro Centro",
+    "visitOurCenterSubtitle": "Todos nuestros servicios están disponibles en nuestro centro comunitario en Oak Trail Shores, Texas.",
+    "foodBankPartnership": "Nuestra Asociación con el Banco de Alimentos",
+    "foodBankPartnershipSubtitle": "Estamos orgullosos de ser miembros de la red del Banco de Alimentos del Área de Tarrant, asegurando que nuestra comunidad tenga acceso a alimentos frescos y nutritivos.",
+    "learnMoreAboutTAFB": "Aprenda Más Sobre TAFB",
+    "questionsAboutServices": "¿Preguntas Sobre Nuestros Servicios?",
+    "questionsAboutServicesSubtitle": "Estamos aquí para ayudar y nos encantaría saber de usted.",
+    "communityInAction": "Nuestra Comunidad en Acción",
+    "learnMore": "Aprenda más"
+  },
+  "cta": {
+    "title": "Únase a Nosotros en la Construcción de una Comunidad Más Fuerte",
+    "subtitle": "Ya sea que esté buscando apoyo, quiera ser voluntario o espera asociarse con nosotros, nos encantaría conectarnos. Juntos, podemos marcar la diferencia.",
+    "volunteer": "Sea Voluntario Con Nosotros",
+    "getInTouch": "Póngase en Contacto"
+  },
+  "about": {
+    "title": "Acerca de",
+    "subtitle": "Un centro comunitario dedicado a servir a nuestros vecinos con dignidad, respeto y cuidado.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "p1": "La Reunión existe para fortalecer nuestra comunidad proporcionando servicios esenciales, fomentando conexiones significativas y apoyando a individuos y familias en momentos de necesidad. Creemos que cada persona merece ser tratada con dignidad y respeto.",
+      "p2": "Como organización basada en la fe, nos guiamos por nuestros valores de compasión, servicio y comunidad. Sin embargo, servimos a todos independientemente de su origen, creencias o circunstancias."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "dignity": {
+        "title": "Dignidad",
+        "description": "Creemos que cada persona tiene un valor inherente y merece ser tratada con respeto."
+      },
+      "community": {
+        "title": "Comunidad",
+        "description": "Fomentamos conexiones y construimos relaciones que fortalecen nuestro vecindario."
+      },
+      "service": {
+        "title": "Servicio",
+        "description": "Estamos comprometidos a satisfacer las necesidades reales de nuestra comunidad con compasión y cuidado."
+      },
+      "partnership": {
+        "title": "Asociación",
+        "description": "Trabajamos en colaboración con otras organizaciones y miembros de la comunidad para maximizar nuestro impacto."
+      }
+    },
+    "location": {
+      "title": "Nuestra Ubicación",
+      "subtitle": "Ubicados en el corazón de Granbury, Texas, servimos a nuestra comunidad desde nuestro acogedor centro comunitario en Maplewood Street.",
+      "address": "2723 Maplewood St",
+      "city": "Granbury, TX 76048",
+      "description": "Estamos convenientemente ubicados en Oak Trail Shores. Nuestro centro sirve como un espacio acogedor para todos los miembros de la comunidad que buscan apoyo, conexión y recursos.",
+      "getDirections": "Obtener Direcciones e Información de Contacto",
+      "viewOnGoogleMaps": "Ver en Google Maps"
+    },
+    "story": {
+      "title": "Nuestra Historia",
+      "p1": "La Reunión tiene una rica historia arraigada en servir a las comunidades no aseguradas y desatendidas del Condado de Hood, Texas. Nuestra historia comienza con el Centro de Alcance Ruth's Place, que originalmente era parte de la organización más grande Ruth's Place.",
+      "p2": "Inicialmente ubicado en Oak Trail Shores, Ruth's Place proporcionó servicios médicos y no médicos a la comunidad. En 2019, la clínica médica (ahora conocida como Centro de Salud Ken Hill) se mudó al centro de Granbury, mientras que el Centro de Alcance permaneció en Oak Trail Shores, continuando enfocándose en programas no médicos esenciales.",
+      "p3": "Estos programas vitales incluyeron una despensa de alimentos, actividades después de la escuela y clases de ESL, todos diseñados para apoyar y fortalecer nuestra comunidad. El Centro de Alcance se convirtió en una piedra angular de Oak Trail Shores, proporcionando servicios esenciales a familias e individuos necesitados.",
+      "p4": "Recientemente, Ruth's Place se asoció con la Primera Iglesia Cristiana de Granbury, que se hará cargo de las funciones del Centro de Alcance. Esta transición asegura la continuación de estos servicios vitales en nuestra comunidad mientras marca el comienzo de un nuevo capítulo.",
+      "p5": "Ahora, el Centro de Alcance Ruth's Place se está convirtiendo en La Reunión - un centro comunitario dedicado a servir a nuestros vecinos con dignidad, respeto y cuidado. Continuamos el legado de proporcionar servicios sociales esenciales, asistencia alimentaria, programas después de la escuela y actividades comunitarias que hacen que nuestra comunidad sea más fuerte.",
+      "p6": "Hoy, La Reunión se erige como un faro de esperanza y apoyo en nuestra comunidad, construyendo sobre la base de servicio establecida por Ruth's Place mientras crea nuevas oportunidades para servir, conectar y fortalecer los lazos que nos hacen una comunidad más fuerte y resiliente."
+    },
+    "wantToLearnMore": {
+      "title": "¿Quiere Saber Más?",
+      "subtitle": "Nos encantaría contarle más sobre nuestro trabajo y cómo puede involucrarse.",
+      "contactUs": "Contáctenos"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Nos encantaría saber de usted. Ya sea que tenga preguntas sobre nuestros servicios, quiera ser voluntario o necesite asistencia, estamos aquí para ayudar.",
+    "getInTouch": "Póngase en Contacto",
+    "email": {
+      "title": "Correo Electrónico",
+      "address": "info@la-reunion.org",
+      "description": "Para consultas generales, información sobre servicios y oportunidades de voluntariado"
+    },
+    "officeHours": {
+      "title": "Horario de Oficina",
+      "hours": "Lunes - Viernes: 9:00 AM - 5:00 PM",
+      "foodPantry": "Despensa de Alimentos Angelita \"Helen\" Best: Todos los jueves, 1:00 PM - 4:00 PM",
+      "afterSchool": "Programa Después de la Escuela: Lunes - Viernes, 3:00 PM - 6:00 PM"
+    },
+    "location": {
+      "title": "Ubicación",
+      "address": "2723 Maplewood St",
+      "city": "Granbury, TX 76048",
+      "description": "Ubicado en el corazón de Oak Trail Shores"
+    },
+    "immediateAssistance": {
+      "title": "¿Necesita Asistencia Inmediata?",
+      "description": "Si necesita ayuda inmediata con asistencia alimentaria u otras necesidades urgentes, por favor contáctenos directamente en info@la-reunion.org o visite durante nuestras horas de atención.",
+      "sendEmail": "Enviar Correo Electrónico"
+    },
+    "quickContact": {
+      "title": "Contacto Rápido",
+      "description": "La forma más rápida de contactarnos es por correo electrónico. Normalmente respondemos dentro de 24 horas.",
+      "generalQuestions": "Preguntas Generales",
+      "volunteerOpportunities": "Oportunidades de Voluntariado",
+      "serviceInformation": "Información de Servicios"
+    },
+    "findUs": {
+      "title": "Encuéntrenos",
+      "subtitle": "Visítenos en nuestro centro comunitario en Oak Trail Shores, Texas.",
+      "foodPantryHours": "Despensa de Alimentos: Jueves 1:00 PM - 4:00 PM"
+    },
+    "otherWaysToConnect": {
+      "title": "Otras Formas de Conectarse",
+      "subtitle": "Siempre estamos buscando formas de servir mejor a nuestra comunidad y construir asociaciones.",
+      "partnershipOpportunities": "Oportunidades de Asociación",
+      "volunteerInterest": "Interés en Voluntariado"
+    }
+  },
+  "volunteer": {
+    "title": "Sea Voluntario Con",
+    "subtitle": "Únase a nuestro equipo de voluntarios dedicados y ayúdenos a servir a nuestra comunidad con dignidad, respeto y cuidado. Cada hora que da marca la diferencia.",
+    "whyVolunteer": {
+      "title": "¿Por Qué Ser Voluntario Con Nosotros?",
+      "subtitle": "Ser voluntario con La Reunión es más que solo dar su tiempo—se trata de construir una comunidad más fuerte y conectada juntos.",
+      "benefits": [
+        "Haga una diferencia significativa en su comunidad",
+        "Gane experiencia y habilidades valiosas",
+        "Conozca nuevas personas y construya relaciones",
+        "Aprenda sobre servicios sociales y necesidades de la comunidad",
+        "Contribuya al cambio positivo",
+        "Opciones de horario flexible"
+      ]
+    },
+    "opportunities": {
+      "title": "Oportunidades de Voluntariado",
+      "subtitle": "Tenemos varias posiciones de voluntariado disponibles para que coincidan con sus intereses, habilidades y horario.",
+      "foodPantry": {
+        "title": "Apoyo a la Despensa de Alimentos Angelita 'Helen' Best",
+        "description": "Ayude a organizar y distribuir artículos alimentarios del Banco de Alimentos del Área de Tarrant, asista con el registro de clientes y mantenga la organización de la despensa.",
+        "time": "Jueves 9:00 AM - 4:00 PM (Preparación 9-12, Distribución 1-4)",
+        "skills": "Organización, servicio al cliente, compasión"
+      },
+      "afterSchool": {
+        "title": "Asistente del Programa Después de la Escuela",
+        "description": "Apoye a los niños con las tareas, lidere actividades educativas y proporcione supervisión durante las horas del programa.",
+        "time": "Lunes a viernes, 3:00 PM - 6:00 PM (Año Escolar)",
+        "skills": "Paciencia, creatividad, experiencia con niños"
+      },
+      "grounds": {
+        "title": "Equipo de Mantenimiento de Terrenos",
+        "description": "Ayude a mantener los terrenos de nuestro centro comunitario mediante corte de césped, deshierbe, lavado a presión y paisajismo.",
+        "time": "Horario flexible, típicamente 2-4 horas por semana",
+        "skills": "Paisajismo, mantenimiento, capacidad física"
+      },
+      "admin": {
+        "title": "Apoyo Administrativo",
+        "description": "Asista con tareas de oficina, entrada de datos, llamadas telefónicas y deberes administrativos generales.",
+        "time": "Flexible, 2-6 horas por semana",
+        "skills": "Organización, habilidades informáticas, atención al detalle"
+      },
+      "events": {
+        "title": "Planificación y Apoyo de Eventos",
+        "description": "Ayude a planificar y coordinar eventos comunitarios, recaudaciones de fondos y programas especiales.",
+        "time": "Varía según el evento",
+        "skills": "Planificación de eventos, comunicación, creatividad"
+      },
+      "teen": {
+        "title": "Apoyo al Programa para Adolescentes",
+        "description": "Apoye los programas para adolescentes proporcionando refrigerios saludables, ayudando con actividades y creando un ambiente acogedor.",
+        "time": "Varía según el programa, típicamente 2-3 horas por evento",
+        "skills": "Compromiso con jóvenes, creatividad, organización"
+      },
+      "special": {
+        "title": "Proyectos Especiales",
+        "description": "Contribuya con sus habilidades y talentos únicos para ayudarnos a servir mejor a nuestra comunidad.",
+        "time": "Varía según el proyecto",
+        "skills": "Sus talentos e intereses únicos"
+      },
+      "time": "Tiempo:",
+      "skills": "Habilidades:"
+    },
+    "getStarted": {
+      "title": "Cómo Comenzar",
+      "subtitle": "¿Listo para marcar la diferencia? Así es como puede comenzar a ser voluntario con La Reunión.",
+      "step1": {
+        "title": "Contáctenos",
+        "description": "Envíenos un correo electrónico a info@la-reunion.org expresando su interés en ser voluntario. Cuéntenos sobre sus intereses, habilidades y disponibilidad."
+      },
+      "step2": {
+        "title": "Programe una Reunión",
+        "description": "Programaremos un tiempo para reunirnos con usted, discutir oportunidades y responder cualquier pregunta que pueda tener sobre ser voluntario con nosotros."
+      },
+      "step3": {
+        "title": "Comience a Ser Voluntario",
+        "description": "Una vez que encontremos el ajuste adecuado, recibirá orientación y capacitación, ¡luego comenzará a marcar la diferencia en nuestra comunidad!"
+      }
+    },
+    "location": {
+      "title": "Dónde Estamos Ubicados",
+      "subtitle": "Únase a nosotros en nuestro centro comunitario en Oak Trail Shores, Texas, donde se basan todas nuestras oportunidades de voluntariado.",
+      "foodPantryHours": "Despensa de Alimentos: Jueves 9:00 AM - 4:00 PM"
+    },
+    "readyToGetStarted": {
+      "title": "¿Listo para Comenzar?",
+      "subtitle": "Nos encantaría saber de usted y discutir cómo puede contribuir a nuestra misión.",
+      "contactUs": "Contáctenos Sobre el Voluntariado"
+    },
+    "seeTheImpact": "Vea el impacto:",
+    "impactDescription": "Niños disfrutando actividades STEM y construyendo conexiones comunitarias",
+    "funActivities": "Actividades divertidas como teñido:",
+    "activitiesDescription": "Los voluntarios ayudan a crear experiencias memorables para los niños"
+  },
+  "donate": {
+    "title": "Apoyar",
+    "subtitle": "Su donación ayuda a La Reunión a proporcionar servicios esenciales, construir conexiones comunitarias y apoyar a familias necesitadas. Cada regalo marca la diferencia.",
+    "makeDonation": {
+      "title": "Haga una Donación Hoy",
+      "subtitle": "Su generoso apoyo nos ayuda a continuar proporcionando servicios esenciales a nuestra comunidad. Cada donación marca una verdadera diferencia en las vidas de las familias e individuos que servimos.",
+      "aboutDonation": {
+        "title": "Acerca de Su Donación",
+        "description": "Actualmente estamos en un período de transición mientras la propiedad del centro sin fines de lucro se transfiere a su nueva entidad. Durante este tiempo, todas las donaciones irán al fondo designado en la Primera Iglesia Cristiana de Granbury, que solo puede gastarse para apoyar las operaciones, programas y servicios de La Reunión. Su donación continuará beneficiando directamente a nuestro centro comunitario y su misión."
+      },
+      "supportMission": {
+        "title": "Apoye Nuestra Misión",
+        "description": "Haga una donación segura a través de nuestro socio de confianza Aplos.",
+        "donateNow": "Donar Ahora",
+        "secure": "Seguro • Deducible de impuestos • Confirmación inmediata"
+      },
+      "donateByMail": {
+        "title": "Donar por Correo",
+        "sendChecksTo": "Envíe cheques a:",
+        "address1": "Primera Iglesia Cristiana de Granbury",
+        "address2": "a/c La Reunión",
+        "address3": "2109 W. US Hwy 377",
+        "address4": "Granbury, TX 76048",
+        "contactUs": "Contáctenos sobre donaciones"
+      }
+    },
+    "otherWays": {
+      "title": "Otras Formas de Apoyar",
+      "subtitle": "Las donaciones financieras no son la única forma de ayudar. Hay muchas formas de apoyar nuestra misión.",
+      "volunteer": {
+        "title": "Voluntario",
+        "description": "Dé su tiempo y talentos para ayudarnos a servir a nuestra comunidad.",
+        "learnMore": "Aprenda Más"
+      },
+      "spreadWord": {
+        "title": "Corra la Voz",
+        "description": "Cuéntele a otros sobre nuestros servicios y misión.",
+        "contactUs": "Contáctenos"
+      },
+      "partnership": {
+        "title": "Asociación",
+        "description": "Explore formas en que su organización puede asociarse con nosotros.",
+        "getInTouch": "Póngase en Contacto"
+      }
+    },
+    "impact": {
+      "title": "Su Apoyo Marca la Diferencia",
+      "subtitle": "Así es como sus generosas donaciones nos ayudan a servir a nuestra comunidad todos los días.",
+      "foodPantry": {
+        "title": "Despensa de Alimentos Angelita 'Helen' Best",
+        "description": "Ayúdenos a proporcionar alimentos nutritivos a familias necesitadas a través de nuestra asociación con el Banco de Alimentos del Área de Tarrant.",
+        "impact": "Cada donación de $25 podría ayudar a proporcionar una semana de comestibles para una familia"
+      },
+      "afterSchool": {
+        "title": "Programas Después de la Escuela",
+        "description": "Apoye la educación y el desarrollo de los niños a través de nuestros programas de enriquecimiento.",
+        "impact": "Cada donación de $50 podría ayudar a proporcionar un mes de apoyo después de la escuela para un niño"
+      },
+      "community": {
+        "title": "Construcción de Comunidad",
+        "description": "Ayúdenos a crear espacios y oportunidades para la conexión y el crecimiento de la comunidad.",
+        "impact": "Cada donación de $100 nos ayuda a organizar eventos y actividades comunitarias"
+      },
+      "resources": {
+        "title": "Conexión de Recursos",
+        "description": "Apoye nuestros esfuerzos para conectar a los miembros de la comunidad con recursos y servicios vitales.",
+        "impact": "Cada donación de $75 nos ayuda a proporcionar navegación de recursos para 10 familias"
+      }
+    },
+    "readyToMakeDifference": {
+      "title": "¿Listo para Marcar la Diferencia?",
+      "subtitle": "Contáctenos hoy para aprender más sobre cómo puede apoyar la misión de La Reunión.",
+      "contactUs": "Contáctenos Sobre Donaciones"
+    }
+  },
+  "common": {
+    "communityCenter": "Centro Comunitario La Reunión",
+    "mondayFriday": "Lunes - Viernes: 9:00 AM - 5:00 PM",
+    "getDirections": "Obtener Direcciones",
+    "viewOnGoogleMaps": "Ver en Google Maps"
+  }
+}
+

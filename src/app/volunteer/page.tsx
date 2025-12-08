@@ -1,61 +1,13 @@
+'use client'
+
 import { Users, Clock, Star, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
+import { useTranslation } from "@/contexts/translation-context"
 
-const volunteerOpportunities = [
-  {
-    title: "Angelita 'Helen' Best Food Pantry Support",
-    description: "Help organize and distribute food items from the Tarrant Area Food Bank, assist with client check-ins, and maintain pantry organization.",
-    timeCommitment: "Thursdays 9:00 AM - 4:00 PM (Prep 9-12, Distribution 1-4)",
-    skills: "Organization, customer service, compassion"
-  },
-  {
-    title: "After-School Program Assistant",
-    description: "Support children with homework, lead educational activities, and provide supervision during program hours.",
-    timeCommitment: "Monday through Friday, 3:00 PM - 6:00 PM (School Year)",
-    skills: "Patience, creativity, experience with children"
-  },
-  {
-    title: "Grounds Maintenance Team",
-    description: "Help maintain our community center grounds through mowing, weeding, power washing, and landscaping.",
-    timeCommitment: "Flexible scheduling, typically 2-4 hours per week",
-    skills: "Landscaping, maintenance, physical ability"
-  },
-  {
-    title: "Administrative Support",
-    description: "Assist with office tasks, data entry, phone calls, and general administrative duties.",
-    timeCommitment: "Flexible, 2-6 hours per week",
-    skills: "Organization, computer skills, attention to detail"
-  },
-  {
-    title: "Event Planning & Support",
-    description: "Help plan and coordinate community events, fundraisers, and special programs.",
-    timeCommitment: "Varies by event",
-    skills: "Event planning, communication, creativity"
-  },
-  {
-    title: "Teen Program Support",
-    description: "Support teen programs by providing healthy snacks, helping with activities, and creating a welcoming environment.",
-    timeCommitment: "Varies by program, typically 2-3 hours per event",
-    skills: "Youth engagement, creativity, organization"
-  },
-  {
-    title: "Special Projects",
-    description: "Contribute your unique skills and talents to help us better serve our community.",
-    timeCommitment: "Varies by project",
-    skills: "Your unique talents and interests"
-  }
-]
-
-const benefits = [
-  "Make a meaningful difference in your community",
-  "Gain valuable experience and skills",
-  "Meet new people and build relationships",
-  "Learn about social services and community needs",
-  "Contribute to positive change",
-  "Flexible scheduling options"
-]
+const opportunityKeys = ['foodPantry', 'afterSchool', 'grounds', 'admin', 'events', 'teen', 'special']
 
 export default function VolunteerPage() {
+  const { t } = useTranslation()
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -63,7 +15,7 @@ export default function VolunteerPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
-              Volunteer With{" "}
+              {t('volunteer.title')}{" "}
               <div className="flex justify-center mt-4">
                 <Image
                   src="/la-reunion-name.svg"
@@ -75,8 +27,7 @@ export default function VolunteerPage() {
               </div>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Join our team of dedicated volunteers and help us serve our community with dignity, 
-              respect, and care. Every hour you give makes a difference.
+              {t('volunteer.subtitle')}
             </p>
           </div>
         </div>
@@ -87,16 +38,15 @@ export default function VolunteerPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Why Volunteer With Us?
+              {t('volunteer.whyVolunteer.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Volunteering with La Reunión is more than just giving your time—it&apos;s about 
-              building a stronger, more connected community together.
+              {t('volunteer.whyVolunteer.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {benefits.map((benefit, index) => (
+            {((t('volunteer.whyVolunteer.benefits') as unknown) as string[]).map((benefit: string, index: number) => (
               <div key={index} className="text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-indigo-900 mb-4">
                   <Star className="h-6 w-6 text-white" aria-hidden="true" />
@@ -131,33 +81,33 @@ export default function VolunteerPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Volunteer Opportunities
+              {t('volunteer.opportunities.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We have various volunteer positions available to match your interests, skills, and schedule.
+              {t('volunteer.opportunities.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {volunteerOpportunities.map((opportunity, index) => (
+            {opportunityKeys.map((key, index) => (
               <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {opportunity.title}
+                  {t(`volunteer.opportunities.${key}.title`)}
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  {opportunity.description}
+                  {t(`volunteer.opportunities.${key}.description`)}
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4 text-red-600" />
                     <span className="text-sm text-gray-600">
-                      <strong>Time:</strong> {opportunity.timeCommitment}
+                      <strong>{t('volunteer.opportunities.time')}</strong> {t(`volunteer.opportunities.${key}.time`)}
                     </span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4 text-red-600" />
                     <span className="text-sm text-gray-600">
-                      <strong>Skills:</strong> {opportunity.skills}
+                      <strong>{t('volunteer.opportunities.skills')}</strong> {t(`volunteer.opportunities.${key}.skills`)}
                     </span>
                   </div>
                 </div>

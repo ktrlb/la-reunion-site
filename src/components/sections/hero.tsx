@@ -1,14 +1,19 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/contexts/translation-context"
 
 export function Hero() {
+  const { t } = useTranslation()
+  
   return (
     <div className="relative bg-gradient-to-br from-red-50 via-red-100 to-indigo-100">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
-            Welcome to{" "}
+            {t('hero.welcome')}{" "}
             <div className="flex justify-center mt-4">
               <Image
                 src="/la-reunion-name.svg"
@@ -20,8 +25,7 @@ export function Hero() {
             </div>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A community center dedicated to providing essential services, fostering connections, 
-            and building a stronger, more supportive community for all.
+            {t('hero.subtitle')}
           </p>
         </div>
       </div>

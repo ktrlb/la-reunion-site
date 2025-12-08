@@ -1,66 +1,18 @@
+'use client'
+
 import { Utensils, Users, Heart, BookOpen, Calendar, Phone, MapPin, Clock } from "lucide-react"
 import Image from "next/image"
+import { useTranslation } from "@/contexts/translation-context"
 
-const services = [
-  {
-    id: "food-pantry",
-    name: "Angelita 'Helen' Best Food Pantry",
-    description: "We provide nutritious food assistance to families and individuals in need through our partnership with the Tarrant Area Food Bank.",
-    icon: Utensils,
-    details: [
-      "Fresh produce and non-perishable items from Tarrant Area Food Bank",
-      "No appointment necessary during open hours",
-      "Serving all community members with dignity and respect",
-      "Member of the Tarrant Area Food Bank network"
-    ],
-    hours: "Every Thursday: 9:00 AM - 4:00 PM (Prep 9-12, Distribution 1-4)",
-    contact: "For questions about food assistance, please contact us at info@la-reunion.org"
-  },
-  {
-    id: "after-school",
-    name: "After-School Program",
-    description: "Supporting children's education and development through engaging activities.",
-    icon: BookOpen,
-    details: [
-      "Homework help and tutoring support",
-      "Educational enrichment activities",
-      "Safe, supervised environment for children",
-      "Partnerships with local schools and educators"
-    ],
-    hours: "Monday through Friday, 3:00 PM - 6:00 PM (School Year)",
-    contact: "For enrollment information, please contact us at info@la-reunion.org"
-  },
-  {
-    id: "resources",
-    name: "Resource Connection",
-    description: "Helping community members connect with available resources and support services.",
-    icon: Heart,
-    details: [
-      "Information about local social services",
-      "Referrals to healthcare providers",
-      "Housing and employment resources",
-      "Legal and financial assistance information"
-    ],
-    hours: "Available during all center hours",
-    contact: "For resource information, please contact us at info@la-reunion.org"
-  },
-  {
-    id: "activities",
-    name: "Community Activities",
-    description: "Fostering connections and building community through various events and programs.",
-    icon: Users,
-    details: [
-      "Community gatherings and celebrations",
-      "Educational workshops and classes",
-      "Cultural events and activities",
-      "Volunteer opportunities and service projects"
-    ],
-    hours: "Various times - check our calendar for upcoming events",
-    contact: "For event information, please contact us at info@la-reunion.org"
-  }
+const serviceIds = [
+  { id: "food-pantry", key: "foodPantry", icon: Utensils },
+  { id: "after-school", key: "afterSchool", icon: BookOpen },
+  { id: "resources", key: "resources", icon: Heart },
+  { id: "activities", key: "activities", icon: Users }
 ]
 
 export default function ServicesPage() {
+  const { t } = useTranslation()
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -68,7 +20,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
-              Our Services at{" "}
+              {t('services.ourServicesAt')}{" "}
               <div className="flex justify-center mt-4">
                 <Image
                   src="/la-reunion-name.svg"
@@ -80,8 +32,7 @@ export default function ServicesPage() {
               </div>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              La Reunión provides a range of essential services designed to support our community 
-              and strengthen the bonds that make us stronger together.
+              {t('services.subtitle')}
             </p>
           </div>
         </div>
@@ -92,7 +43,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="space-y-24">
-              {services.map((service, index) => (
+              {serviceIds.map((service, index) => (
                 <div key={service.id} id={service.id} className="scroll-mt-20">
                   <div className={`grid grid-cols-1 gap-12 lg:grid-cols-2 ${
                     index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
@@ -103,17 +54,17 @@ export default function ServicesPage() {
                           <service.icon className="h-6 w-6 text-white" aria-hidden="true" />
                         </div>
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                          {service.name}
+                          {t(`services.${service.key}.name`)}
                         </h2>
                       </div>
                       <p className="text-lg leading-8 text-gray-600 mb-6">
-                        {service.description}
+                        {t(`services.${service.key}.fullDescription`)}
                       </p>
                       
                       <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-gray-900">What We Offer:</h3>
+                        <h3 className="text-lg font-semibold text-gray-900">{t('services.whatWeOffer')}</h3>
                         <ul className="space-y-2">
-                          {service.details.map((detail, detailIndex) => (
+                          {((t(`services.${service.key}.details`) as unknown) as string[]).map((detail: string, detailIndex: number) => (
                             <li key={detailIndex} className="flex items-start">
                               <div className="flex-shrink-0">
                                 <div className="h-2 w-2 rounded-full bg-gradient-to-r from-red-600 to-indigo-900 mt-2"></div>
@@ -128,8 +79,8 @@ export default function ServicesPage() {
                         <div className="flex items-start space-x-3">
                           <Calendar className="h-5 w-5 text-red-600 mt-0.5" />
                           <div>
-                            <h4 className="font-semibold text-gray-900">Hours:</h4>
-                            <p className="text-gray-600">{service.hours}</p>
+                            <h4 className="font-semibold text-gray-900">{t('services.hours')}</h4>
+                            <p className="text-gray-600">{t(`services.${service.key}.hours`)}</p>
                           </div>
                         </div>
                       </div>
@@ -138,8 +89,8 @@ export default function ServicesPage() {
                         <div className="flex items-start space-x-3">
                           <Phone className="h-5 w-5 text-red-600 mt-0.5" />
                           <div>
-                            <h4 className="font-semibold text-gray-900">Contact:</h4>
-                            <p className="text-gray-600">{service.contact}</p>
+                            <h4 className="font-semibold text-gray-900">{t('services.contact')}</h4>
+                            <p className="text-gray-600">{t(`services.${service.key}.contact`)}</p>
                           </div>
                         </div>
                       </div>
@@ -150,7 +101,7 @@ export default function ServicesPage() {
                         {service.id === "food-pantry" ? (
                           <Image
                             src="/images/food pantry.jpg"
-                            alt="Angelita 'Helen' Best Food Pantry at La Reunión"
+                            alt={t('services.foodPantry.name')}
                             width={600}
                             height={600}
                             className="h-full w-full object-cover"
@@ -204,11 +155,10 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our Food Bank Partnership
+              {t('services.foodBankPartnership')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We&apos;re proud to be a member of the Tarrant Area Food Bank network, ensuring our community 
-              has access to fresh, nutritious food.
+              {t('services.foodBankPartnershipSubtitle')}
             </p>
           </div>
           <div className="text-center">
@@ -218,7 +168,7 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
                               className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
             >
-              Learn More About TAFB
+              {t('services.learnMoreAboutTAFB')}
             </a>
           </div>
         </div>
@@ -229,34 +179,34 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Visit Our Center
+              {t('services.visitOurCenter')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              All our services are available at our community center in Oak Trail Shores, Texas.
+              {t('services.visitOurCenterSubtitle')}
             </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                La Reunión Community Center
+                {t('common.communityCenter')}
               </h3>
               <div className="space-y-3 text-gray-600">
                 <p className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-red-600" />
-                  <span>2723 Maplewood St</span>
+                  <span>{t('about.location.address')}</span>
                 </p>
                 <p className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-red-600" />
-                  <span>Granbury, TX 76048</span>
+                  <span>{t('about.location.city')}</span>
                 </p>
                 <p className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-red-600" />
-                  <span>Monday - Friday: 9:00 AM - 5:00 PM</span>
+                  <span>{t('common.mondayFriday')}</span>
                 </p>
                 <p className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-red-600" />
-                  <span>Food Pantry: Thursdays 1:00 PM - 4:00 PM</span>
+                  <span>{t('contact.findUs.foodPantryHours')}</span>
                 </p>
               </div>
               
@@ -268,7 +218,7 @@ export default function ServicesPage() {
                   className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
-                  Get Directions
+                  {t('common.getDirections')}
                 </a>
               </div>
             </div>
@@ -279,11 +229,11 @@ export default function ServicesPage() {
                   <MapPin className="h-16 w-16 text-red-600 mx-auto" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  La Reunión Community Center
+                  {t('common.communityCenter')}
                 </h4>
                 <p className="text-gray-600 mb-4">
-                  2723 Maplewood St<br />
-                  Granbury, TX 76048
+                  {t('about.location.address')}<br />
+                  {t('about.location.city')}
                 </p>
                 <a
                   href="https://maps.google.com/?q=2723+Maplewood+St+Granbury+TX+76048"
@@ -292,7 +242,7 @@ export default function ServicesPage() {
                   className="inline-flex items-center rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:from-red-700 hover:to-indigo-900"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
-                  View on Google Maps
+                  {t('common.viewOnGoogleMaps')}
                 </a>
               </div>
             </div>
@@ -304,17 +254,17 @@ export default function ServicesPage() {
       <div className="bg-gradient-to-r from-red-600 to-indigo-900 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Questions About Our Services?
+            {t('services.questionsAboutServices')}
           </h2>
           <p className="mt-4 text-lg text-red-100">
-            We&apos;re here to help and would love to hear from you.
+            {t('services.questionsAboutServicesSubtitle')}
           </p>
           <div className="mt-8">
             <a
               href="mailto:info@la-reunion.org"
               className="inline-flex items-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-red-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
             >
-              Contact Us
+              {t('contact.getInTouch')}
             </a>
           </div>
         </div>
