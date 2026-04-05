@@ -1,13 +1,7 @@
-import { Hero } from "@/components/sections/hero"
-import { ServicesOverview } from "@/components/sections/services-overview"
-import { CTA } from "@/components/sections/cta"
+import { HomeSections } from "@/components/cms/home-sections"
+import { getPageSectionsCached } from "@/lib/cms/page-config-queries"
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <ServicesOverview />
-      <CTA />
-    </>
-  )
+export default async function Home() {
+  const sections = await getPageSectionsCached("/")
+  return <HomeSections sections={sections} />
 }

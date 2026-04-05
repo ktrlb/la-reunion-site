@@ -7,18 +7,29 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/ui/language-switcher"
 import { useTranslation } from "@/contexts/translation-context"
+import type { NavItemRow } from "@/lib/cms/nav-queries"
 
-const navigation = [
-  { key: "home", href: "/" },
-  { key: "about", href: "/about" },
-  { key: "services", href: "/services" },
-  { key: "volunteer", href: "/volunteer" },
-  { key: "contact", href: "/contact" },
+const FALLBACK_NAV: NavItemRow[] = [
+  { id: "fb-home", href: "/", labelEn: "Home", labelEs: "Inicio", visible: true, sortOrder: 0 },
+  { id: "fb-about", href: "/about", labelEn: "About", labelEs: "Acerca de", visible: true, sortOrder: 1 },
+  { id: "fb-services", href: "/services", labelEn: "Services", labelEs: "Servicios", visible: true, sortOrder: 2 },
+  { id: "fb-volunteer", href: "/volunteer", labelEn: "Volunteer", labelEs: "Voluntario", visible: true, sortOrder: 3 },
+  { id: "fb-contact", href: "/contact", labelEn: "Contact", labelEs: "Contacto", visible: true, sortOrder: 4 },
 ]
 
-export function Navigation() {
+interface NavigationProps {
+  navItems?: NavItemRow[]
+}
+
+export function Navigation({ navItems }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { t } = useTranslation()
+  const { t, locale } = useTranslation()
+
+  const items = (navItems?.length ? navItems : FALLBACK_NAV)
+    .filter((i) => i.visible)
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+
+  const label = (row: NavItemRow) => (locale === "es" ? row.labelEs : row.labelEn)
 
   return (
     <header className="bg-white shadow-sm">
@@ -56,27 +67,26 @@ export function Navigation() {
           </Button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
+          {items.map((item) => (
             <Link
-              key={item.key}
+              key={item.id}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-red-600 transition-colors"
+              className="text-sm font-semibold leading-6 text-gray-900 transition-colors hover:text-red-600"
             >
-              {t(`nav.${item.key}`)}
+              {label(item)}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
+        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-4">
           <LanguageSwitcher />
           <Link href="/donate">
-            <Button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
-              {t('nav.donate')}
+            <Button className="bg-gradient-to-r from-red-600 to-indigo-900 text-white hover:from-red-700 hover:to-indigo-900">
+              {t("nav.donate")}
             </Button>
           </Link>
         </div>
       </nav>
-      
-      {/* Mobile menu */}
+
       {mobileMenuOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-50" />
@@ -114,24 +124,24 @@ export function Navigation() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-800/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {items.map((item) => (
                     <Link
-                      key={item.key}
+                      key={item.id}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {t(`nav.${item.key}`)}
+                      {label(item)}
                     </Link>
                   ))}
                 </div>
-                <div className="py-6 space-y-3">
+                <div className="space-y-3 py-6">
                   <div className="px-3">
                     <LanguageSwitcher />
                   </div>
                   <Link href="/donate">
-                    <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white">
-                      {t('nav.donate')}
+                    <Button className="w-full bg-gradient-to-r from-red-600 to-indigo-900 text-white hover:from-red-700 hover:to-indigo-900">
+                      {t("nav.donate")}
                     </Button>
                   </Link>
                 </div>

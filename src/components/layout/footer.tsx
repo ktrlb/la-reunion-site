@@ -1,12 +1,18 @@
 import Link from "next/link"
 import Image from "next/image"
+import { siteConfig } from "@/lib/site-config"
 
-export function Footer() {
+interface FooterProps {
+  orgPhone?: string | null
+}
+
+export function Footer({ orgPhone }: FooterProps) {
+  const email = siteConfig.contact.email
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Organization Info */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <Image
@@ -24,53 +30,61 @@ export function Footer() {
                 className="h-7 w-auto"
               />
             </div>
-            <p className="text-gray-300 text-sm">
-              A community center providing social services, food assistance, and 
-              after-school programs with dignity and care.
+            <p className="text-sm text-gray-300">
+              A community center providing social services, food assistance, and after-school programs with
+              dignity and care.
             </p>
-            <div className="text-gray-300 text-sm">
-              <p>2723 Maplewood St</p>
-              <p>Granbury, TX 76048</p>
+            <div className="text-sm text-gray-300">
+              <p>{siteConfig.address.street}</p>
+              <p>
+                {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}
+              </p>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about" className="text-gray-300 transition-colors hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/services" className="text-gray-300 transition-colors hover:text-white">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/volunteer" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/volunteer" className="text-gray-300 transition-colors hover:text-white">
                   Volunteer
                 </Link>
               </li>
               <li>
-                <Link href="/donate" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/donate" className="text-gray-300 transition-colors hover:text-white">
                   Donate
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <div className="space-y-2 text-sm text-gray-300">
-              <p>Email: info@la-reunion.org</p>
+              <p>Email: {email}</p>
+              {orgPhone ? (
+                <p>
+                  Phone:{" "}
+                  <a href={`tel:${orgPhone.replace(/\s/g, "")}`} className="hover:text-white">
+                    {orgPhone}
+                  </a>
+                </p>
+              ) : null}
               <p>For immediate assistance or questions</p>
             </div>
             <div className="pt-4">
               <Link href="/donate">
-                <button className="bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white px-6 py-2 rounded-md transition-colors">
+                <button className="rounded-md bg-gradient-to-r from-red-600 to-indigo-900 px-6 py-2 text-white transition-colors hover:from-red-700 hover:to-indigo-900">
                   Support Our Mission
                 </button>
               </Link>
@@ -78,7 +92,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+        <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} La Reunión. All rights reserved.</p>
           <p className="mt-1">Serving our community with dignity and care.</p>
         </div>
