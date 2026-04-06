@@ -24,6 +24,9 @@ export function AdminAuthShell({ children }: { children: React.ReactNode }) {
             <Link href="/admin/breeze" className="hover:text-red-600">
               Breeze
             </Link>
+            <Link href="/admin/breeze/explore" className="hover:text-red-600">
+              Breeze data
+            </Link>
             <Link href="/admin/google-calendar" className="hover:text-red-600">
               Google (info)
             </Link>

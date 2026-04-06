@@ -11,8 +11,23 @@ export const DOCUMENT_SLOTS: DocumentSlotDefinition[] = [
     pagePath: "/contact",
   },
   {
+    key: "volunteer.application",
+    label: "Volunteer — Application (PDF)",
+    pagePath: "/volunteer",
+  },
+  {
+    key: "volunteer.backgroundCheck",
+    label: "Volunteer — Background check (PDF)",
+    pagePath: "/volunteer",
+  },
+  {
+    key: "volunteer.confidentiality",
+    label: "Volunteer — Confidentiality agreement (PDF)",
+    pagePath: "/volunteer",
+  },
+  {
     key: "volunteer.forms",
-    label: "Volunteer — Forms & PDFs",
+    label: "Volunteer — Additional PDFs (legacy list)",
     pagePath: "/volunteer",
   },
   {

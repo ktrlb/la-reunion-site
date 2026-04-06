@@ -84,15 +84,55 @@ export const breezePeople = pgTable("breeze_people", {
   lastSyncedAt: timestamp("last_synced_at", { withTimezone: true }).defaultNow().notNull(),
 })
 
-export const eventPersonLinks = pgTable("event_person_links", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  eventId: uuid("event_id")
-    .notNull()
-    .references(() => breezeEvents.id, { onDelete: "cascade" }),
-  personId: uuid("person_id")
-    .notNull()
-    .references(() => breezePeople.id, { onDelete: "cascade" }),
-  role: text("role").notNull().default("connection"),
-  notes: text("notes"),
-  createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
+/**
+ * Optional denormalized links when both event + person exist in our cache (e.g. volunteer ↔ tagged person).
+ * Authoritative volunteer data is in `breeze_volunteer_assignments` and `breeze_volunteer_roles_by_event`.
+ * If your DB still has `event_person_links`, rename it: `ALTER TABLE event_person_links RENAME TO breeze_event_person_links;`
+ */
+export const breezeEventPersonLinks = pgTable(
+  "breeze_event_person_links",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    eventId: uuid("event_id")
+      .notNull()
+      .references(() => breezeEvents.id, { onDelete: "cascade" }),
+    personId: uuid("person_id")
+      .notNull()
+      .references(() => breezePeople.id, { onDelete: "cascade" }),
+    role: text("role").notNull().default("connection"),
+    notes: text("notes"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
+  },
+  (t) => [unique().on(t.eventId, t.personId)],
+)
+
+/** Volunteer role definitions per event instance (Breeze `GET /api/volunteers/list_roles`). */
+export const breezeVolunteerRolesByEvent = pgTable("breeze_volunteer_roles_by_event", {
+  instanceId: text("instance_id").primaryKey(),
+  roles: jsonb("roles").notNull().$type<unknown>(),
+  lastSyncedAt: timestamp("last_synced_at", { withTimezone: true }).defaultNow().notNull(),
 })
+
+/**
+ * Volunteer signups from Breeze `GET /api/volunteers/list` — source of truth for who is scheduled per event instance.
+ * `raw` holds the full API row; columns below are extracted for querying and sorting.
+ */
+export const breezeVolunteerAssignments = pgTable(
+  "breeze_volunteer_assignments",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    instanceId: text("instance_id").notNull(),
+    personBreezeId: text("person_breeze_id").notNull(),
+    /** Breeze `id` on the volunteer signup row */
+    breezeSignupId: text("breeze_signup_id"),
+    breezeOid: text("breeze_oid"),
+    response: text("response"),
+    comment: text("comment"),
+    rsvpedOn: timestamp("rsvped_on", { withTimezone: true }),
+    signupCreatedOn: timestamp("signup_created_on", { withTimezone: true }),
+    roleIds: jsonb("role_ids").$type<unknown>(),
+    raw: jsonb("raw"),
+    lastSyncedAt: timestamp("last_synced_at", { withTimezone: true }).defaultNow().notNull(),
+  },
+  (t) => [unique().on(t.instanceId, t.personBreezeId)],
+)

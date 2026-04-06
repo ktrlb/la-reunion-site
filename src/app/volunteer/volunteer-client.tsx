@@ -1,12 +1,13 @@
-'use client'
+"use client"
 
+import type { ReactNode } from "react"
 import { Users, Clock, Star, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
 import { useTranslation } from "@/contexts/translation-context"
 
-const opportunityKeys = ['foodPantry', 'afterSchool', 'grounds', 'admin', 'events', 'teen', 'special']
+const opportunityKeys = ["foodPantry", "afterSchool", "grounds", "admin", "events", "teen", "special"]
 
-export default function VolunteerPageClient() {
+export default function VolunteerPageClient({ formsSection }: { formsSection?: ReactNode }) {
   const { t } = useTranslation()
   return (
     <div className="bg-white">
@@ -134,6 +135,8 @@ export default function VolunteerPageClient() {
           </div>
         </div>
       </div>
+
+      {formsSection}
 
       {/* How to Get Started */}
       <div className="py-24 sm:py-32">

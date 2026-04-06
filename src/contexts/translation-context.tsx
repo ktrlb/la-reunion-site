@@ -29,17 +29,17 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>('en')
 
   useEffect(() => {
-    // Load saved language preference from localStorage
+    /* eslint-disable react-hooks/set-state-in-effect -- one-time client hydration from localStorage / navigator */
     const savedLocale = localStorage.getItem('locale') as Locale
     if (savedLocale && (savedLocale === 'en' || savedLocale === 'es')) {
       setLocale(savedLocale)
     } else {
-      // Try to detect browser language
       const browserLang = navigator.language.split('-')[0]
       if (browserLang === 'es') {
         setLocale('es')
       }
     }
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, [])
 
   const changeLanguage = (newLocale: Locale) => {

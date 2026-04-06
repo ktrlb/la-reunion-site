@@ -274,7 +274,18 @@
     "seeTheImpact": "Vea el impacto:",
     "impactDescription": "Niños disfrutando actividades STEM y construyendo conexiones comunitarias",
     "funActivities": "Actividades divertidas como teñido:",
-    "activitiesDescription": "Los voluntarios ayudan a crear experiencias memorables para los niños"
+    "activitiesDescription": "Los voluntarios ayudan a crear experiencias memorables para los niños",
+    "formsSection": {
+      "title": "Formularios de solicitud de voluntariado",
+      "subtitle": "Estos tres documentos son obligatorios para nuestro proceso de solicitud de voluntariado: la solicitud de voluntariado, la autorización de verificación de antecedentes y el acuerdo de confidencialidad. Descargue cada PDF, complételo y devuelva las copias firmadas como indique nuestro equipo, o tráigalas a su reunión de voluntariado.",
+      "opensNewTab": "Cada enlace abre el PDF en una nueva pestaña.",
+      "links": {
+        "application": "Solicitud de voluntariado",
+        "backgroundCheck": "Autorización de verificación de antecedentes",
+        "confidentiality": "Acuerdo de confidencialidad"
+      },
+      "additionalHeading": "Formularios adicionales"
+    }
   },
   "donate": {
     "title": "Apoyar",

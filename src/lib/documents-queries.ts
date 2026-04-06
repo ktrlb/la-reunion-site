@@ -37,6 +37,12 @@ export async function getSlotDocuments(slotKey: string): Promise<PublicDocument[
   }))
 }
 
+/** First live document in a slot (by sort order), for single-file slots. */
+export async function getFirstSlotDocument(slotKey: string): Promise<PublicDocument | null> {
+  const list = await getSlotDocuments(slotKey)
+  return list[0] ?? null
+}
+
 export interface LiveSiteLinkRow {
   placementId: string
   slotKey: string

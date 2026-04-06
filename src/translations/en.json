@@ -274,7 +274,18 @@
     "seeTheImpact": "See the impact:",
     "impactDescription": "Kids enjoying STEM activities and building community connections",
     "funActivities": "Fun activities like tie-dye:",
-    "activitiesDescription": "Volunteers help create memorable experiences for kids"
+    "activitiesDescription": "Volunteers help create memorable experiences for kids",
+    "formsSection": {
+      "title": "Volunteer application forms",
+      "subtitle": "These three documents are required for our volunteer application process: the volunteer application, background check authorization, and confidentiality agreement. Download each PDF, complete it, and return signed copies as our team directs—or bring them to your volunteer meeting.",
+      "opensNewTab": "Each link opens the PDF in a new tab.",
+      "links": {
+        "application": "Volunteer application",
+        "backgroundCheck": "Background check authorization",
+        "confidentiality": "Confidentiality agreement"
+      },
+      "additionalHeading": "Additional forms"
+    }
   },
   "donate": {
     "title": "Support",
