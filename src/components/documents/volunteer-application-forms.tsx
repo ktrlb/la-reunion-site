@@ -1,8 +1,9 @@
 "use client"
 
-import { FileText } from "lucide-react"
+import { ExternalLink, FileText, Globe } from "lucide-react"
 import { useTranslation } from "@/contexts/translation-context"
 import type { PublicDocument } from "@/lib/documents-queries"
+import { siteConfig } from "@/lib/site-config"
 
 interface VolunteerApplicationFormsProps {
   application: PublicDocument | null
@@ -39,8 +40,7 @@ export function VolunteerApplicationForms({
 
   const legacyOnly = namedRows.length === 0 && legacyList.length > 0
   const showAdditional = namedRows.length > 0 && legacyList.length > 0
-
-  if (namedRows.length === 0 && legacyList.length === 0) return null
+  const hasDownloadableForms = namedRows.length > 0 || legacyList.length > 0
 
   return (
     <section className="border-y border-red-100 bg-gradient-to-br from-red-50/90 via-white to-indigo-50/50 py-16 sm:py-20">
@@ -49,8 +49,46 @@ export function VolunteerApplicationForms({
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {t("volunteer.formsSection.title")}
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">{t("volunteer.formsSection.subtitle")}</p>
-          <ul className="mt-8 space-y-3 border-t border-gray-200 pt-8">
+
+          <div className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-indigo-900 p-8 shadow-xl ring-4 ring-red-200/60 sm:p-10">
+            <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-white/15 ring-2 ring-white/30">
+                <Globe className="h-8 w-8 text-white" aria-hidden="true" />
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-2xl font-bold text-white sm:text-3xl">
+                  {t("volunteer.formsSection.onlineApplication.title")}
+                </h3>
+                <p className="mt-3 text-base leading-7 text-red-100">
+                  {t("volunteer.formsSection.onlineApplication.description")}
+                </p>
+                <div className="mt-6 flex flex-col items-center gap-2 sm:items-start">
+                  <a
+                    href={siteConfig.links.volunteerApplicationOnline}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-semibold text-red-600 shadow-sm transition-colors hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    {t("volunteer.formsSection.onlineApplication.button")}
+                    <ExternalLink className="ml-2 h-5 w-5" aria-hidden="true" />
+                  </a>
+                  <p className="text-xs text-red-100/80">
+                    {t("volunteer.formsSection.onlineApplication.opensNewTab")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {hasDownloadableForms ? (
+            <>
+              <h3 className="mt-12 text-xl font-semibold text-gray-900">
+                {t("volunteer.formsSection.downloadHeading")}
+              </h3>
+              <p className="mt-3 text-lg leading-8 text-gray-600">
+                {t("volunteer.formsSection.subtitle")}
+              </p>
+              <ul className="mt-8 space-y-3 border-t border-gray-200 pt-8">
             {legacyOnly
               ? legacyList.map((d) => (
                   <li key={d.id}>
@@ -105,8 +143,10 @@ export function VolunteerApplicationForms({
                 ))}
               </>
             ) : null}
-          </ul>
-          <p className="mt-4 text-xs text-gray-500">{t("volunteer.formsSection.opensNewTab")}</p>
+              </ul>
+              <p className="mt-4 text-xs text-gray-500">{t("volunteer.formsSection.opensNewTab")}</p>
+            </>
+          ) : null}
         </div>
       </div>
     </section>

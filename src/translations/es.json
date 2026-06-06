@@ -277,6 +277,13 @@
     "activitiesDescription": "Los voluntarios ayudan a crear experiencias memorables para los niños",
     "formsSection": {
       "title": "Formularios de solicitud de voluntariado",
+      "onlineApplication": {
+        "title": "Solicite en línea",
+        "description": "Complete y envíe su solicitud de voluntariado en su navegador, sin necesidad de imprimir. Después de enviarla, procesaremos su solicitud y le enviaremos el calendario de inscripción una vez que sea confirmado como voluntario.",
+        "button": "Iniciar solicitud en línea",
+        "opensNewTab": "Abre el formulario de solicitud en una nueva pestaña."
+      },
+      "downloadHeading": "O descargue formularios PDF",
       "subtitle": "Estos tres documentos son obligatorios para nuestro proceso de solicitud de voluntariado: la solicitud de voluntariado, la autorización de verificación de antecedentes y el acuerdo de confidencialidad. Descargue cada PDF, complételo y devuelva las copias firmadas como indique nuestro equipo, o tráigalas a su reunión de voluntariado.",
       "opensNewTab": "Cada enlace abre el PDF en una nueva pestaña.",
       "links": {
@@ -289,17 +296,17 @@
   },
   "donate": {
     "title": "Apoyar",
-    "subtitle": "Su donación ayuda a La Reunión a proporcionar servicios esenciales, construir conexiones comunitarias y apoyar a familias necesitadas. Cada regalo marca la diferencia.",
+    "subtitle": "Su donación puede ayudar a La Reunión a proporcionar servicios esenciales, construir conexiones comunitarias y apoyar a familias necesitadas. Cada regalo tiene el potencial de marcar la diferencia.",
     "makeDonation": {
       "title": "Haga una Donación Hoy",
-      "subtitle": "Su generoso apoyo nos ayuda a continuar proporcionando servicios esenciales a nuestra comunidad. Cada donación marca una verdadera diferencia en las vidas de las familias e individuos que servimos.",
+      "subtitle": "Su generoso apoyo puede ayudarnos a continuar proporcionando servicios esenciales a nuestra comunidad. Cada donación tiene el potencial de marcar una diferencia significativa en las vidas de las familias e individuos que servimos.",
       "aboutDonation": {
         "title": "Acerca de Su Donación",
-        "description": "Actualmente estamos en un período de transición mientras la propiedad del centro sin fines de lucro se transfiere a su nueva entidad. Durante este tiempo, todas las donaciones irán al fondo designado en la Primera Iglesia Cristiana de Granbury, que solo puede gastarse para apoyar las operaciones, programas y servicios de La Reunión. Su donación continuará beneficiando directamente a nuestro centro comunitario y su misión."
+        "description": "Actualmente estamos en un período de transición mientras la propiedad del centro sin fines de lucro se transfiere a su nueva entidad. Durante este tiempo, todas las donaciones irán al fondo designado en la Primera Iglesia Cristiana de Granbury, que solo puede gastarse para apoyar las operaciones, programas y servicios de La Reunión. Su donación puede continuar beneficiando a nuestro centro comunitario y su misión."
       },
       "supportMission": {
         "title": "Apoye Nuestra Misión",
-        "description": "Haga una donación segura a través de nuestro socio de confianza Aplos.",
+        "description": "Complete nuestro formulario seguro de donación en línea para apoyar a La Reunión.",
         "donateNow": "Donar Ahora",
         "secure": "Seguro • Deducible de impuestos • Confirmación inmediata"
       },
@@ -333,32 +340,32 @@
       }
     },
     "impact": {
-      "title": "Su Apoyo Marca la Diferencia",
-      "subtitle": "Así es como sus generosas donaciones nos ayudan a servir a nuestra comunidad todos los días.",
+      "title": "El Impacto que Su Apoyo Podría Tener",
+      "subtitle": "Estos son ejemplos de la diferencia que su generosidad podría marcar en nuestra comunidad.",
       "foodPantry": {
         "title": "Despensa de Alimentos Angelita 'Helen' Best",
-        "description": "Ayúdenos a proporcionar alimentos nutritivos a familias necesitadas a través de nuestra asociación con el Banco de Alimentos del Área de Tarrant.",
-        "impact": "Cada donación de $25 podría ayudar a proporcionar una semana de comestibles para una familia"
+        "description": "Apoye nuestro trabajo para proporcionar alimentos nutritivos a familias necesitadas a través de nuestra asociación con el Banco de Alimentos del Área de Tarrant.",
+        "impact": "Una donación de $25 podría proporcionar hasta una semana de comestibles para una familia"
       },
       "afterSchool": {
         "title": "Programas Después de la Escuela",
         "description": "Apoye la educación y el desarrollo de los niños a través de nuestros programas de enriquecimiento.",
-        "impact": "Cada donación de $50 podría ayudar a proporcionar un mes de apoyo después de la escuela para un niño"
+        "impact": "Una donación de $50 podría proporcionar hasta un mes de apoyo después de la escuela para un niño"
       },
       "community": {
         "title": "Construcción de Comunidad",
-        "description": "Ayúdenos a crear espacios y oportunidades para la conexión y el crecimiento de la comunidad.",
-        "impact": "Cada donación de $100 nos ayuda a organizar eventos y actividades comunitarias"
+        "description": "Apoye espacios y oportunidades para la conexión y el crecimiento de la comunidad.",
+        "impact": "Una donación de $100 podría ayudar a apoyar eventos y actividades comunitarias"
       },
       "resources": {
         "title": "Conexión de Recursos",
         "description": "Apoye nuestros esfuerzos para conectar a los miembros de la comunidad con recursos y servicios vitales.",
-        "impact": "Cada donación de $75 nos ayuda a proporcionar navegación de recursos para 10 familias"
+        "impact": "Una donación de $75 podría ayudar a apoyar la navegación de recursos para hasta 10 familias"
       }
     },
     "readyToMakeDifference": {
       "title": "¿Listo para Marcar la Diferencia?",
-      "subtitle": "Contáctenos hoy para aprender más sobre cómo puede apoyar la misión de La Reunión.",
+      "subtitle": "Contáctenos hoy para aprender más sobre formas en que podría apoyar la misión de La Reunión.",
       "contactUs": "Contáctenos Sobre Donaciones"
     }
   },

@@ -12,7 +12,9 @@ export const siteConfig = {
     phone: "" as string,
   },
   links: {
-    donateOnline: "https://fccgranbury.breezechms.com/give/online",
+    donateOnline: "https://fccgranbury.breezechms.com/form/la-reunion-donate",
+    volunteerApplicationOnline:
+      "https://fccgranbury.breezechms.com/form/volunteer-application-la-reunion",
     tafb: "https://tafb.org/",
     get mapUrl() {
       return `https://maps.google.com/?q=${encodeURIComponent(`${address.street} ${address.city} ${address.state} ${address.zip}`)}`

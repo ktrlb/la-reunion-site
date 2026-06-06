@@ -3,6 +3,7 @@
 import { Heart, Users, Utensils, BookOpen, Mail } from "lucide-react"
 import Image from "next/image"
 import { useTranslation } from "@/contexts/translation-context"
+import { siteConfig } from "@/lib/site-config"
 
 const impactKeys = [
   { key: 'foodPantry', icon: Utensils },
@@ -78,7 +79,7 @@ export default function DonatePage() {
                 {/* Online Donation Button */}
                 <div className="mb-8">
                   <a 
-                    href="https://www.aplos.com/aws/give/fccgranbury/la-reunion"
+                    href={siteConfig.links.donateOnline}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-gradient-to-r from-red-600 to-indigo-900 hover:from-red-700 hover:to-indigo-900 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 inline-flex items-center justify-center space-x-2"

@@ -277,6 +277,13 @@
     "activitiesDescription": "Volunteers help create memorable experiences for kids",
     "formsSection": {
       "title": "Volunteer application forms",
+      "onlineApplication": {
+        "title": "Apply online",
+        "description": "Complete and submit your volunteer application in your browser—no printing required. After you submit, we will process your application and send you the sign-up schedule once you are confirmed as a volunteer.",
+        "button": "Start online application",
+        "opensNewTab": "Opens the application form in a new tab."
+      },
+      "downloadHeading": "Or download PDF forms",
       "subtitle": "These three documents are required for our volunteer application process: the volunteer application, background check authorization, and confidentiality agreement. Download each PDF, complete it, and return signed copies as our team directs—or bring them to your volunteer meeting.",
       "opensNewTab": "Each link opens the PDF in a new tab.",
       "links": {
@@ -289,17 +296,17 @@
   },
   "donate": {
     "title": "Support",
-    "subtitle": "Your donation helps La Reunión provide essential services, build community connections, and support families in need. Every gift makes a difference.",
+    "subtitle": "Your donation can help La Reunión provide essential services, build community connections, and support families in need. Every gift has the potential to make a difference.",
     "makeDonation": {
       "title": "Make a Donation Today",
-      "subtitle": "Your generous support helps us continue providing essential services to our community. Every donation makes a real difference in the lives of families and individuals we serve.",
+      "subtitle": "Your generous support can help us continue providing essential services to our community. Every donation has the potential to make a meaningful difference in the lives of families and individuals we serve.",
       "aboutDonation": {
         "title": "About Your Donation",
-        "description": "We are currently in a transitional period as ownership of the nonprofit center transfers to its new entity. During this time, all donations will go to the designated fund at First Christian Church of Granbury, which can only be spent to support La Reunión's operations, programs and services. Your donation will continue to directly benefit our community center and its mission."
+        "description": "We are currently in a transitional period as ownership of the nonprofit center transfers to its new entity. During this time, all donations will go to the designated fund at First Christian Church of Granbury, which can only be spent to support La Reunión's operations, programs and services. Your donation can continue to benefit our community center and its mission."
       },
       "supportMission": {
         "title": "Support Our Mission",
-        "description": "Make a secure donation through our trusted partner Aplos.",
+        "description": "Complete our secure online donation form to support La Reunión.",
         "donateNow": "Donate Now",
         "secure": "Secure • Tax-deductible • Immediate confirmation"
       },
@@ -333,32 +340,32 @@
       }
     },
     "impact": {
-      "title": "Your Support Makes a Difference",
-      "subtitle": "Here's how your generous donations help us serve our community every day.",
+      "title": "The Impact Your Support Could Have",
+      "subtitle": "These are examples of the difference your generosity could make in our community.",
       "foodPantry": {
         "title": "Angelita 'Helen' Best Food Pantry",
-        "description": "Help us provide nutritious food to families in need through our partnership with the Tarrant Area Food Bank.",
-        "impact": "Each $25 donation could help provide a week's worth of groceries for a family"
+        "description": "Support our work to provide nutritious food to families in need through our partnership with the Tarrant Area Food Bank.",
+        "impact": "A $25 donation could provide as much as a week's worth of groceries for a family"
       },
       "afterSchool": {
         "title": "After-School Programs",
         "description": "Support children's education and development through our enrichment programs.",
-        "impact": "Each $50 donation could help provide a month of after-school support for a child"
+        "impact": "A $50 donation could provide as much as a month of after-school support for a child"
       },
       "community": {
         "title": "Community Building",
-        "description": "Help us create spaces and opportunities for community connection and growth.",
-        "impact": "Each $100 donation helps us host community events and activities"
+        "description": "Support spaces and opportunities for community connection and growth.",
+        "impact": "A $100 donation could help support community events and activities"
       },
       "resources": {
         "title": "Resource Connection",
         "description": "Support our efforts to connect community members with vital resources and services.",
-        "impact": "Each $75 donation helps us provide resource navigation for 10 families"
+        "impact": "A $75 donation could help support resource navigation for as many as 10 families"
       }
     },
     "readyToMakeDifference": {
       "title": "Ready to Make a Difference?",
-      "subtitle": "Contact us today to learn more about how you can support La Reunión's mission.",
+      "subtitle": "Contact us today to learn more about ways you could support La Reunión's mission.",
       "contactUs": "Contact Us About Donating"
     }
   },

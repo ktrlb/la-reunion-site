@@ -10,22 +10,20 @@ export default async function VolunteerPage() {
     getSlotDocuments("volunteer.forms"),
   ])
 
-  const hasNamedSlots = Boolean(application || backgroundCheck || confidentiality)
-  const legacyOnly = !hasNamedSlots && legacyForms.length > 0
+  const legacyOnly = !Boolean(application || backgroundCheck || confidentiality) && legacyForms.length > 0
   const shownIds = new Set(
     [application?.id, backgroundCheck?.id, confidentiality?.id].filter(Boolean) as string[],
   )
   const extraLegacy = legacyForms.filter((d) => !shownIds.has(d.id))
 
-  const formsSection =
-    hasNamedSlots || legacyOnly || extraLegacy.length > 0 ? (
-      <VolunteerApplicationForms
-        application={application}
-        backgroundCheck={backgroundCheck}
-        confidentiality={confidentiality}
-        legacyList={legacyOnly ? legacyForms : extraLegacy}
-      />
-    ) : null
+  const formsSection = (
+    <VolunteerApplicationForms
+      application={application}
+      backgroundCheck={backgroundCheck}
+      confidentiality={confidentiality}
+      legacyList={legacyOnly ? legacyForms : extraLegacy}
+    />
+  )
 
   return <VolunteerPageClient formsSection={formsSection} />
 }
